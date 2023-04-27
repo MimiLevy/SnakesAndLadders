@@ -34,16 +34,6 @@
             this.tblSquars = new System.Windows.Forms.TableLayoutPanel();
             this.tbl1 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlRedPawn = new System.Windows.Forms.Panel();
-            this.tblToolbar = new System.Windows.Forms.TableLayoutPanel();
-            this.lblMessage = new System.Windows.Forms.Label();
-            this.btnThrowTheDice = new System.Windows.Forms.Button();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.btnStep = new System.Windows.Forms.Button();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pnlBluePawn = new System.Windows.Forms.Panel();
             this.tbl3 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl4 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl5 = new System.Windows.Forms.TableLayoutPanel();
@@ -62,11 +52,13 @@
             this.tbl18 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl19 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl20 = new System.Windows.Forms.TableLayoutPanel();
+            this.pnlBluePawn = new System.Windows.Forms.Panel();
+            this.pnlRedPawn = new System.Windows.Forms.Panel();
             this.tbl21 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl22 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl23 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl24 = new System.Windows.Forms.TableLayoutPanel();
-            this.tbl = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl25 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl26 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl27 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl28 = new System.Windows.Forms.TableLayoutPanel();
@@ -92,7 +84,6 @@
             this.tbl48 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl49 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl50 = new System.Windows.Forms.TableLayoutPanel();
-            this.tbl51 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl52 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl53 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl54 = new System.Windows.Forms.TableLayoutPanel();
@@ -142,12 +133,21 @@
             this.tbl98 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl99 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl100 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl51 = new System.Windows.Forms.TableLayoutPanel();
+            this.tblToolbar = new System.Windows.Forms.TableLayoutPanel();
+            this.lblMessage = new System.Windows.Forms.Label();
+            this.btnThrowTheDice = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnStep = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.tblMain.SuspendLayout();
             this.pnlBoard.SuspendLayout();
             this.tblSquars.SuspendLayout();
+            this.tbl20.SuspendLayout();
             this.tblToolbar.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tbl20.SuspendLayout();
             this.SuspendLayout();
             // 
             // tblMain
@@ -215,7 +215,7 @@
             this.tblSquars.Controls.Add(this.tbl22, 1, 7);
             this.tblSquars.Controls.Add(this.tbl23, 2, 7);
             this.tblSquars.Controls.Add(this.tbl24, 3, 7);
-            this.tblSquars.Controls.Add(this.tbl, 4, 7);
+            this.tblSquars.Controls.Add(this.tbl25, 4, 7);
             this.tblSquars.Controls.Add(this.tbl26, 5, 7);
             this.tblSquars.Controls.Add(this.tbl27, 6, 7);
             this.tblSquars.Controls.Add(this.tbl28, 7, 7);
@@ -335,127 +335,6 @@
             this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tbl2.Size = new System.Drawing.Size(68, 60);
             this.tbl2.TabIndex = 101;
-            // 
-            // pnlRedPawn
-            // 
-            this.pnlRedPawn.BackColor = System.Drawing.Color.Red;
-            this.pnlRedPawn.Location = new System.Drawing.Point(3, 3);
-            this.pnlRedPawn.Name = "pnlRedPawn";
-            this.pnlRedPawn.Size = new System.Drawing.Size(18, 23);
-            this.pnlRedPawn.TabIndex = 2;
-            // 
-            // tblToolbar
-            // 
-            this.tblToolbar.ColumnCount = 4;
-            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.92443F));
-            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.46424F));
-            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.986505F));
-            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.48988F));
-            this.tblToolbar.Controls.Add(this.lblMessage, 3, 0);
-            this.tblToolbar.Controls.Add(this.btnThrowTheDice, 1, 0);
-            this.tblToolbar.Controls.Add(this.btnStart, 0, 0);
-            this.tblToolbar.Controls.Add(this.btnStep, 2, 0);
-            this.tblToolbar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblToolbar.Location = new System.Drawing.Point(3, 3);
-            this.tblToolbar.Name = "tblToolbar";
-            this.tblToolbar.RowCount = 1;
-            this.tblToolbar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblToolbar.Size = new System.Drawing.Size(741, 80);
-            this.tblToolbar.TabIndex = 1;
-            // 
-            // lblMessage
-            // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblMessage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblMessage.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMessage.Location = new System.Drawing.Point(317, 0);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(421, 80);
-            this.lblMessage.TabIndex = 3;
-            this.lblMessage.Text = "Click Start to begin the game";
-            this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnThrowTheDice
-            // 
-            this.btnThrowTheDice.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnThrowTheDice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnThrowTheDice.Enabled = false;
-            this.btnThrowTheDice.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnThrowTheDice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnThrowTheDice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnThrowTheDice.Location = new System.Drawing.Point(121, 3);
-            this.btnThrowTheDice.Name = "btnThrowTheDice";
-            this.btnThrowTheDice.Size = new System.Drawing.Size(116, 74);
-            this.btnThrowTheDice.TabIndex = 1;
-            this.btnThrowTheDice.Text = "Throw The Dice";
-            this.btnThrowTheDice.UseVisualStyleBackColor = false;
-            // 
-            // btnStart
-            // 
-            this.btnStart.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnStart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnStart.Location = new System.Drawing.Point(3, 3);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(112, 74);
-            this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = false;
-            // 
-            // btnStep
-            // 
-            this.btnStep.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btnStep.Enabled = false;
-            this.btnStep.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnStep.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnStep.Location = new System.Drawing.Point(243, 3);
-            this.btnStep.Name = "btnStep";
-            this.btnStep.Size = new System.Drawing.Size(68, 74);
-            this.btnStep.TabIndex = 2;
-            this.btnStep.Text = "Step";
-            this.btnStep.UseVisualStyleBackColor = false;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.23188F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.76812F));
-            this.tableLayoutPanel3.Controls.Add(this.panel3, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(200, 100);
-            this.tableLayoutPanel3.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Red;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(19, 14);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.MediumBlue;
-            this.panel4.Location = new System.Drawing.Point(3, 33);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(19, 24);
-            this.panel4.TabIndex = 1;
-            // 
-            // pnlBluePawn
-            // 
-            this.pnlBluePawn.BackColor = System.Drawing.Color.MediumBlue;
-            this.pnlBluePawn.Location = new System.Drawing.Point(3, 32);
-            this.pnlBluePawn.Name = "pnlBluePawn";
-            this.pnlBluePawn.Size = new System.Drawing.Size(20, 24);
-            this.pnlBluePawn.TabIndex = 0;
             // 
             // tbl3
             // 
@@ -693,6 +572,22 @@
             this.tbl20.Size = new System.Drawing.Size(68, 59);
             this.tbl20.TabIndex = 119;
             // 
+            // pnlBluePawn
+            // 
+            this.pnlBluePawn.BackColor = System.Drawing.Color.MediumBlue;
+            this.pnlBluePawn.Location = new System.Drawing.Point(3, 32);
+            this.pnlBluePawn.Name = "pnlBluePawn";
+            this.pnlBluePawn.Size = new System.Drawing.Size(19, 24);
+            this.pnlBluePawn.TabIndex = 0;
+            // 
+            // pnlRedPawn
+            // 
+            this.pnlRedPawn.BackColor = System.Drawing.Color.Red;
+            this.pnlRedPawn.Location = new System.Drawing.Point(3, 3);
+            this.pnlRedPawn.Name = "pnlRedPawn";
+            this.pnlRedPawn.Size = new System.Drawing.Size(18, 23);
+            this.pnlRedPawn.TabIndex = 2;
+            // 
             // tbl21
             // 
             this.tbl21.ColumnCount = 2;
@@ -745,18 +640,18 @@
             this.tbl24.Size = new System.Drawing.Size(68, 59);
             this.tbl24.TabIndex = 123;
             // 
-            // tbl
+            // tbl25
             // 
-            this.tbl.ColumnCount = 2;
-            this.tbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl.Location = new System.Drawing.Point(299, 458);
-            this.tbl.Name = "tbl";
-            this.tbl.RowCount = 2;
-            this.tbl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl.Size = new System.Drawing.Size(68, 59);
-            this.tbl.TabIndex = 124;
+            this.tbl25.ColumnCount = 2;
+            this.tbl25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl25.Location = new System.Drawing.Point(299, 458);
+            this.tbl25.Name = "tbl25";
+            this.tbl25.RowCount = 2;
+            this.tbl25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl25.Size = new System.Drawing.Size(68, 59);
+            this.tbl25.TabIndex = 124;
             // 
             // tbl26
             // 
@@ -1082,19 +977,6 @@
             this.tbl50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tbl50.Size = new System.Drawing.Size(69, 59);
             this.tbl50.TabIndex = 149;
-            // 
-            // tbl51
-            // 
-            this.tbl51.ColumnCount = 2;
-            this.tbl51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.88406F));
-            this.tbl51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.11594F));
-            this.tbl51.Location = new System.Drawing.Point(669, 263);
-            this.tbl51.Name = "tbl51";
-            this.tbl51.RowCount = 2;
-            this.tbl51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl51.Size = new System.Drawing.Size(69, 59);
-            this.tbl51.TabIndex = 150;
             // 
             // tbl52
             // 
@@ -1733,6 +1615,124 @@
             this.tbl100.Size = new System.Drawing.Size(68, 59);
             this.tbl100.TabIndex = 199;
             // 
+            // tbl51
+            // 
+            this.tbl51.ColumnCount = 2;
+            this.tbl51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.88406F));
+            this.tbl51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.11594F));
+            this.tbl51.Location = new System.Drawing.Point(669, 263);
+            this.tbl51.Name = "tbl51";
+            this.tbl51.RowCount = 2;
+            this.tbl51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl51.Size = new System.Drawing.Size(69, 59);
+            this.tbl51.TabIndex = 150;
+            // 
+            // tblToolbar
+            // 
+            this.tblToolbar.ColumnCount = 4;
+            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.92443F));
+            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.46424F));
+            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.986505F));
+            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.48988F));
+            this.tblToolbar.Controls.Add(this.lblMessage, 3, 0);
+            this.tblToolbar.Controls.Add(this.btnThrowTheDice, 1, 0);
+            this.tblToolbar.Controls.Add(this.btnStart, 0, 0);
+            this.tblToolbar.Controls.Add(this.btnStep, 2, 0);
+            this.tblToolbar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblToolbar.Location = new System.Drawing.Point(3, 3);
+            this.tblToolbar.Name = "tblToolbar";
+            this.tblToolbar.RowCount = 1;
+            this.tblToolbar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblToolbar.Size = new System.Drawing.Size(741, 80);
+            this.tblToolbar.TabIndex = 1;
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblMessage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMessage.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMessage.Location = new System.Drawing.Point(317, 0);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(421, 80);
+            this.lblMessage.TabIndex = 3;
+            this.lblMessage.Text = "Click Start to begin the game";
+            this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnThrowTheDice
+            // 
+            this.btnThrowTheDice.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnThrowTheDice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnThrowTheDice.Enabled = false;
+            this.btnThrowTheDice.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnThrowTheDice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThrowTheDice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnThrowTheDice.Location = new System.Drawing.Point(121, 3);
+            this.btnThrowTheDice.Name = "btnThrowTheDice";
+            this.btnThrowTheDice.Size = new System.Drawing.Size(116, 74);
+            this.btnThrowTheDice.TabIndex = 1;
+            this.btnThrowTheDice.Text = "Throw The Dice";
+            this.btnThrowTheDice.UseVisualStyleBackColor = false;
+            // 
+            // btnStart
+            // 
+            this.btnStart.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnStart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnStart.Location = new System.Drawing.Point(3, 3);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(112, 74);
+            this.btnStart.TabIndex = 0;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = false;
+            // 
+            // btnStep
+            // 
+            this.btnStep.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btnStep.Enabled = false;
+            this.btnStep.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStep.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnStep.Location = new System.Drawing.Point(243, 3);
+            this.btnStep.Name = "btnStep";
+            this.btnStep.Size = new System.Drawing.Size(68, 74);
+            this.btnStep.TabIndex = 2;
+            this.btnStep.Text = "Step";
+            this.btnStep.UseVisualStyleBackColor = false;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.23188F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.76812F));
+            this.tableLayoutPanel3.Controls.Add(this.panel3, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Red;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(19, 14);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.MediumBlue;
+            this.panel4.Location = new System.Drawing.Point(3, 33);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(19, 24);
+            this.panel4.TabIndex = 1;
+            // 
             // frmSnakesAndLadders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1745,10 +1745,10 @@
             this.tblMain.ResumeLayout(false);
             this.pnlBoard.ResumeLayout(false);
             this.tblSquars.ResumeLayout(false);
+            this.tbl20.ResumeLayout(false);
             this.tblToolbar.ResumeLayout(false);
             this.tblToolbar.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.tbl20.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1792,7 +1792,7 @@
         private TableLayoutPanel tbl22;
         private TableLayoutPanel tbl23;
         private TableLayoutPanel tbl24;
-        private TableLayoutPanel tbl;
+        private TableLayoutPanel tbl25;
         private TableLayoutPanel tbl26;
         private TableLayoutPanel tbl27;
         private TableLayoutPanel tbl28;
