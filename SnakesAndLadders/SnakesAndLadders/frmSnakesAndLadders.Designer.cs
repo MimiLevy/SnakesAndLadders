@@ -28,1685 +28,1727 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSnakesAndLadders));
             this.tblMain = new System.Windows.Forms.TableLayoutPanel();
-            this.tblBoard = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl100 = new System.Windows.Forms.Label();
-            this.lbl99 = new System.Windows.Forms.Label();
-            this.lbl98 = new System.Windows.Forms.Label();
-            this.lbl96 = new System.Windows.Forms.Label();
-            this.lbl95 = new System.Windows.Forms.Label();
-            this.lbl94 = new System.Windows.Forms.Label();
-            this.lbl93 = new System.Windows.Forms.Label();
-            this.lbl92 = new System.Windows.Forms.Label();
-            this.lbl91 = new System.Windows.Forms.Label();
-            this.lbl81 = new System.Windows.Forms.Label();
-            this.lbl82 = new System.Windows.Forms.Label();
-            this.lbl83 = new System.Windows.Forms.Label();
-            this.lbl87 = new System.Windows.Forms.Label();
-            this.lbl88 = new System.Windows.Forms.Label();
-            this.lbl89 = new System.Windows.Forms.Label();
-            this.lbl90 = new System.Windows.Forms.Label();
-            this.lbl80 = new System.Windows.Forms.Label();
-            this.lbl79 = new System.Windows.Forms.Label();
-            this.lbl78 = new System.Windows.Forms.Label();
-            this.lbl77 = new System.Windows.Forms.Label();
-            this.lbl74 = new System.Windows.Forms.Label();
-            this.lbl73 = new System.Windows.Forms.Label();
-            this.lbl72 = new System.Windows.Forms.Label();
-            this.lbl71 = new System.Windows.Forms.Label();
-            this.lbl61 = new System.Windows.Forms.Label();
-            this.lbl62 = new System.Windows.Forms.Label();
-            this.lbl63 = new System.Windows.Forms.Label();
-            this.lbl64 = new System.Windows.Forms.Label();
-            this.lbl65 = new System.Windows.Forms.Label();
-            this.lbl66 = new System.Windows.Forms.Label();
-            this.lbl67 = new System.Windows.Forms.Label();
-            this.lbl68 = new System.Windows.Forms.Label();
-            this.lbl69 = new System.Windows.Forms.Label();
-            this.lbl70 = new System.Windows.Forms.Label();
-            this.lbl60 = new System.Windows.Forms.Label();
-            this.lbl59 = new System.Windows.Forms.Label();
-            this.lbl58 = new System.Windows.Forms.Label();
-            this.lbl57 = new System.Windows.Forms.Label();
-            this.lbl56 = new System.Windows.Forms.Label();
-            this.lbl55 = new System.Windows.Forms.Label();
-            this.lbl54 = new System.Windows.Forms.Label();
-            this.lbl53 = new System.Windows.Forms.Label();
-            this.lbl52 = new System.Windows.Forms.Label();
-            this.lbl51 = new System.Windows.Forms.Label();
-            this.lbl41 = new System.Windows.Forms.Label();
-            this.lbl42 = new System.Windows.Forms.Label();
-            this.lbl43 = new System.Windows.Forms.Label();
-            this.lbl44 = new System.Windows.Forms.Label();
-            this.lbl45 = new System.Windows.Forms.Label();
-            this.lbl46 = new System.Windows.Forms.Label();
-            this.lbl47 = new System.Windows.Forms.Label();
-            this.lbl48 = new System.Windows.Forms.Label();
-            this.lbl49 = new System.Windows.Forms.Label();
-            this.lbl50 = new System.Windows.Forms.Label();
-            this.lbl40 = new System.Windows.Forms.Label();
-            this.lbl39 = new System.Windows.Forms.Label();
-            this.lbl38 = new System.Windows.Forms.Label();
-            this.lbl37 = new System.Windows.Forms.Label();
-            this.lbl36 = new System.Windows.Forms.Label();
-            this.lbl35 = new System.Windows.Forms.Label();
-            this.lbl34 = new System.Windows.Forms.Label();
-            this.lbl33 = new System.Windows.Forms.Label();
-            this.lbl32 = new System.Windows.Forms.Label();
-            this.lbl31 = new System.Windows.Forms.Label();
-            this.lbl21 = new System.Windows.Forms.Label();
-            this.lbl22 = new System.Windows.Forms.Label();
-            this.lbl23 = new System.Windows.Forms.Label();
-            this.lbl24 = new System.Windows.Forms.Label();
-            this.lbl25 = new System.Windows.Forms.Label();
-            this.lbl26 = new System.Windows.Forms.Label();
-            this.lbl27 = new System.Windows.Forms.Label();
-            this.lbl28 = new System.Windows.Forms.Label();
-            this.lbl29 = new System.Windows.Forms.Label();
-            this.lbl30 = new System.Windows.Forms.Label();
-            this.lbl20 = new System.Windows.Forms.Label();
-            this.lbl19 = new System.Windows.Forms.Label();
-            this.lbl18 = new System.Windows.Forms.Label();
-            this.lbl17 = new System.Windows.Forms.Label();
-            this.lbl16 = new System.Windows.Forms.Label();
-            this.lbl15 = new System.Windows.Forms.Label();
-            this.lbl14 = new System.Windows.Forms.Label();
-            this.lbl13 = new System.Windows.Forms.Label();
-            this.lbl12 = new System.Windows.Forms.Label();
-            this.lbl11 = new System.Windows.Forms.Label();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
-            this.l = new System.Windows.Forms.Label();
-            this.lbl5 = new System.Windows.Forms.Label();
-            this.lbl6 = new System.Windows.Forms.Label();
-            this.lbl7 = new System.Windows.Forms.Label();
-            this.lbl8 = new System.Windows.Forms.Label();
-            this.lbl9 = new System.Windows.Forms.Label();
-            this.lbl10 = new System.Windows.Forms.Label();
-            this.lbl86 = new System.Windows.Forms.Label();
-            this.lbl97 = new System.Windows.Forms.Label();
-            this.lbl84 = new System.Windows.Forms.Label();
-            this.lbl75 = new System.Windows.Forms.Label();
-            this.lbl76 = new System.Windows.Forms.Label();
+            this.pnlBoard = new System.Windows.Forms.Panel();
+            this.tblSquars = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl2 = new System.Windows.Forms.TableLayoutPanel();
+            this.pnlRedPawn = new System.Windows.Forms.Panel();
             this.tblToolbar = new System.Windows.Forms.TableLayoutPanel();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.btnThrowTheDice = new System.Windows.Forms.Button();
             this.lblMessage = new System.Windows.Forms.Label();
+            this.btnThrowTheDice = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnStep = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlBluePawn = new System.Windows.Forms.Panel();
+            this.tbl3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl5 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl7 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl8 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl9 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl10 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl11 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl12 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl13 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl14 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl15 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl16 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl17 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl18 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl19 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl20 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl21 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl22 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl23 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl24 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl26 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl27 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl28 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl29 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl30 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl31 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl32 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl33 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl34 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl35 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl36 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl37 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl38 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl39 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl40 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl41 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl42 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl43 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl44 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl45 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl46 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl47 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl48 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl49 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl50 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl51 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl52 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl53 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl54 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl55 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl56 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl57 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl58 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl59 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl60 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl61 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl62 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl63 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl64 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl65 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl66 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl67 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl68 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl69 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl70 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl71 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl72 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl73 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl74 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl75 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl76 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl77 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl78 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl79 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl80 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl81 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl82 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl83 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl84 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl85 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl86 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl87 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl88 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl89 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl90 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl91 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl92 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl93 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl94 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl95 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl96 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl97 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl98 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl99 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl100 = new System.Windows.Forms.TableLayoutPanel();
             this.tblMain.SuspendLayout();
-            this.tblBoard.SuspendLayout();
+            this.pnlBoard.SuspendLayout();
+            this.tblSquars.SuspendLayout();
             this.tblToolbar.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tbl20.SuspendLayout();
             this.SuspendLayout();
             // 
             // tblMain
             // 
-            this.tblMain.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
             this.tblMain.ColumnCount = 1;
             this.tblMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblMain.Controls.Add(this.tblBoard, 0, 1);
+            this.tblMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblMain.Controls.Add(this.pnlBoard, 0, 1);
             this.tblMain.Controls.Add(this.tblToolbar, 0, 0);
             this.tblMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblMain.Location = new System.Drawing.Point(0, 0);
             this.tblMain.Name = "tblMain";
             this.tblMain.RowCount = 2;
-            this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.52041F));
-            this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.47959F));
-            this.tblMain.Size = new System.Drawing.Size(817, 727);
+            this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.60594F));
+            this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.39407F));
+            this.tblMain.Size = new System.Drawing.Size(747, 743);
             this.tblMain.TabIndex = 0;
             // 
-            // tblBoard
-            // 
-            this.tblBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tblBoard.ColumnCount = 10;
-            this.tblBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.Controls.Add(this.lbl100, 0, 0);
-            this.tblBoard.Controls.Add(this.lbl99, 1, 0);
-            this.tblBoard.Controls.Add(this.lbl98, 2, 0);
-            this.tblBoard.Controls.Add(this.lbl96, 4, 0);
-            this.tblBoard.Controls.Add(this.lbl95, 5, 0);
-            this.tblBoard.Controls.Add(this.lbl94, 6, 0);
-            this.tblBoard.Controls.Add(this.lbl93, 7, 0);
-            this.tblBoard.Controls.Add(this.lbl92, 8, 0);
-            this.tblBoard.Controls.Add(this.lbl91, 9, 0);
-            this.tblBoard.Controls.Add(this.lbl81, 0, 1);
-            this.tblBoard.Controls.Add(this.lbl82, 1, 1);
-            this.tblBoard.Controls.Add(this.lbl83, 2, 1);
-            this.tblBoard.Controls.Add(this.lbl87, 6, 1);
-            this.tblBoard.Controls.Add(this.lbl88, 7, 1);
-            this.tblBoard.Controls.Add(this.lbl89, 8, 1);
-            this.tblBoard.Controls.Add(this.lbl90, 9, 1);
-            this.tblBoard.Controls.Add(this.lbl80, 0, 2);
-            this.tblBoard.Controls.Add(this.lbl79, 1, 2);
-            this.tblBoard.Controls.Add(this.lbl78, 2, 2);
-            this.tblBoard.Controls.Add(this.lbl77, 3, 2);
-            this.tblBoard.Controls.Add(this.lbl74, 6, 2);
-            this.tblBoard.Controls.Add(this.lbl73, 7, 2);
-            this.tblBoard.Controls.Add(this.lbl72, 8, 2);
-            this.tblBoard.Controls.Add(this.lbl71, 9, 2);
-            this.tblBoard.Controls.Add(this.lbl61, 0, 3);
-            this.tblBoard.Controls.Add(this.lbl62, 1, 3);
-            this.tblBoard.Controls.Add(this.lbl63, 2, 3);
-            this.tblBoard.Controls.Add(this.lbl64, 3, 3);
-            this.tblBoard.Controls.Add(this.lbl65, 4, 3);
-            this.tblBoard.Controls.Add(this.lbl66, 5, 3);
-            this.tblBoard.Controls.Add(this.lbl67, 6, 3);
-            this.tblBoard.Controls.Add(this.lbl68, 7, 3);
-            this.tblBoard.Controls.Add(this.lbl69, 8, 3);
-            this.tblBoard.Controls.Add(this.lbl70, 9, 3);
-            this.tblBoard.Controls.Add(this.lbl60, 0, 4);
-            this.tblBoard.Controls.Add(this.lbl59, 1, 4);
-            this.tblBoard.Controls.Add(this.lbl58, 2, 4);
-            this.tblBoard.Controls.Add(this.lbl57, 3, 4);
-            this.tblBoard.Controls.Add(this.lbl56, 4, 4);
-            this.tblBoard.Controls.Add(this.lbl55, 5, 4);
-            this.tblBoard.Controls.Add(this.lbl54, 6, 4);
-            this.tblBoard.Controls.Add(this.lbl53, 7, 4);
-            this.tblBoard.Controls.Add(this.lbl52, 8, 4);
-            this.tblBoard.Controls.Add(this.lbl51, 9, 4);
-            this.tblBoard.Controls.Add(this.lbl41, 0, 5);
-            this.tblBoard.Controls.Add(this.lbl42, 1, 5);
-            this.tblBoard.Controls.Add(this.lbl43, 2, 5);
-            this.tblBoard.Controls.Add(this.lbl44, 3, 5);
-            this.tblBoard.Controls.Add(this.lbl45, 4, 5);
-            this.tblBoard.Controls.Add(this.lbl46, 5, 5);
-            this.tblBoard.Controls.Add(this.lbl47, 6, 5);
-            this.tblBoard.Controls.Add(this.lbl48, 7, 5);
-            this.tblBoard.Controls.Add(this.lbl49, 8, 5);
-            this.tblBoard.Controls.Add(this.lbl50, 9, 5);
-            this.tblBoard.Controls.Add(this.lbl40, 0, 6);
-            this.tblBoard.Controls.Add(this.lbl39, 1, 6);
-            this.tblBoard.Controls.Add(this.lbl38, 2, 6);
-            this.tblBoard.Controls.Add(this.lbl37, 3, 6);
-            this.tblBoard.Controls.Add(this.lbl36, 4, 6);
-            this.tblBoard.Controls.Add(this.lbl35, 5, 6);
-            this.tblBoard.Controls.Add(this.lbl34, 6, 6);
-            this.tblBoard.Controls.Add(this.lbl33, 7, 6);
-            this.tblBoard.Controls.Add(this.lbl32, 8, 6);
-            this.tblBoard.Controls.Add(this.lbl31, 9, 6);
-            this.tblBoard.Controls.Add(this.lbl21, 0, 7);
-            this.tblBoard.Controls.Add(this.lbl22, 1, 7);
-            this.tblBoard.Controls.Add(this.lbl23, 2, 7);
-            this.tblBoard.Controls.Add(this.lbl24, 3, 7);
-            this.tblBoard.Controls.Add(this.lbl25, 4, 7);
-            this.tblBoard.Controls.Add(this.lbl26, 5, 7);
-            this.tblBoard.Controls.Add(this.lbl27, 6, 7);
-            this.tblBoard.Controls.Add(this.lbl28, 7, 7);
-            this.tblBoard.Controls.Add(this.lbl29, 8, 7);
-            this.tblBoard.Controls.Add(this.lbl30, 9, 7);
-            this.tblBoard.Controls.Add(this.lbl20, 0, 8);
-            this.tblBoard.Controls.Add(this.lbl19, 1, 8);
-            this.tblBoard.Controls.Add(this.lbl18, 2, 8);
-            this.tblBoard.Controls.Add(this.lbl17, 3, 8);
-            this.tblBoard.Controls.Add(this.lbl16, 4, 8);
-            this.tblBoard.Controls.Add(this.lbl15, 5, 8);
-            this.tblBoard.Controls.Add(this.lbl14, 6, 8);
-            this.tblBoard.Controls.Add(this.lbl13, 7, 8);
-            this.tblBoard.Controls.Add(this.lbl12, 8, 8);
-            this.tblBoard.Controls.Add(this.lbl11, 9, 8);
-            this.tblBoard.Controls.Add(this.lbl1, 0, 9);
-            this.tblBoard.Controls.Add(this.lbl2, 1, 9);
-            this.tblBoard.Controls.Add(this.lbl3, 2, 9);
-            this.tblBoard.Controls.Add(this.l, 3, 9);
-            this.tblBoard.Controls.Add(this.lbl5, 4, 9);
-            this.tblBoard.Controls.Add(this.lbl6, 5, 9);
-            this.tblBoard.Controls.Add(this.lbl7, 6, 9);
-            this.tblBoard.Controls.Add(this.lbl8, 7, 9);
-            this.tblBoard.Controls.Add(this.lbl9, 8, 9);
-            this.tblBoard.Controls.Add(this.lbl10, 9, 9);
-            this.tblBoard.Controls.Add(this.lbl86, 5, 1);
-            this.tblBoard.Controls.Add(this.lbl97, 3, 0);
-            this.tblBoard.Controls.Add(this.lbl84, 3, 1);
-            this.tblBoard.Controls.Add(this.lbl75, 5, 2);
-            this.tblBoard.Controls.Add(this.lbl76, 4, 2);
-            this.tblBoard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblBoard.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tblBoard.Location = new System.Drawing.Point(6, 106);
-            this.tblBoard.Name = "tblBoard";
-            this.tblBoard.RowCount = 10;
-            this.tblBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblBoard.Size = new System.Drawing.Size(805, 615);
-            this.tblBoard.TabIndex = 1;
-            this.tblBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.tblBoard_Paint);
-            // 
-            // lbl100
-            // 
-            this.lbl100.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl100.AutoSize = true;
-            this.lbl100.BackColor = System.Drawing.Color.Salmon;
-            this.lbl100.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl100.Location = new System.Drawing.Point(3, 0);
-            this.lbl100.Name = "lbl100";
-            this.lbl100.Size = new System.Drawing.Size(74, 61);
-            this.lbl100.TabIndex = 0;
-            this.lbl100.Text = "100";
-            this.lbl100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl99
-            // 
-            this.lbl99.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl99.AutoSize = true;
-            this.lbl99.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl99.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl99.Location = new System.Drawing.Point(83, 0);
-            this.lbl99.Name = "lbl99";
-            this.lbl99.Size = new System.Drawing.Size(74, 61);
-            this.lbl99.TabIndex = 1;
-            this.lbl99.Text = "99";
-            this.lbl99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl98
-            // 
-            this.lbl98.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl98.AutoSize = true;
-            this.lbl98.BackColor = System.Drawing.Color.Salmon;
-            this.lbl98.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl98.Location = new System.Drawing.Point(163, 0);
-            this.lbl98.Name = "lbl98";
-            this.lbl98.Size = new System.Drawing.Size(74, 61);
-            this.lbl98.TabIndex = 2;
-            this.lbl98.Text = "98";
-            this.lbl98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl96
-            // 
-            this.lbl96.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl96.AutoSize = true;
-            this.lbl96.BackColor = System.Drawing.Color.Salmon;
-            this.lbl96.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl96.Location = new System.Drawing.Point(323, 0);
-            this.lbl96.Name = "lbl96";
-            this.lbl96.Size = new System.Drawing.Size(74, 61);
-            this.lbl96.TabIndex = 4;
-            this.lbl96.Text = "96";
-            this.lbl96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl96.Click += new System.EventHandler(this.lbl96_Click);
-            // 
-            // lbl95
-            // 
-            this.lbl95.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl95.AutoSize = true;
-            this.lbl95.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl95.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl95.Location = new System.Drawing.Point(403, 0);
-            this.lbl95.Name = "lbl95";
-            this.lbl95.Size = new System.Drawing.Size(74, 61);
-            this.lbl95.TabIndex = 5;
-            this.lbl95.Text = "95";
-            this.lbl95.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl94
-            // 
-            this.lbl94.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl94.AutoSize = true;
-            this.lbl94.BackColor = System.Drawing.Color.Salmon;
-            this.lbl94.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl94.Location = new System.Drawing.Point(483, 0);
-            this.lbl94.Name = "lbl94";
-            this.lbl94.Size = new System.Drawing.Size(74, 61);
-            this.lbl94.TabIndex = 6;
-            this.lbl94.Text = "94";
-            this.lbl94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl93
-            // 
-            this.lbl93.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl93.AutoSize = true;
-            this.lbl93.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl93.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl93.Location = new System.Drawing.Point(563, 0);
-            this.lbl93.Name = "lbl93";
-            this.lbl93.Size = new System.Drawing.Size(74, 61);
-            this.lbl93.TabIndex = 7;
-            this.lbl93.Text = "93";
-            this.lbl93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl92
-            // 
-            this.lbl92.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl92.AutoSize = true;
-            this.lbl92.BackColor = System.Drawing.Color.Salmon;
-            this.lbl92.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl92.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl92.Location = new System.Drawing.Point(643, 0);
-            this.lbl92.Name = "lbl92";
-            this.lbl92.Size = new System.Drawing.Size(74, 61);
-            this.lbl92.TabIndex = 8;
-            this.lbl92.Text = "92";
-            this.lbl92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl91
-            // 
-            this.lbl91.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl91.AutoSize = true;
-            this.lbl91.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl91.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl91.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl91.Location = new System.Drawing.Point(723, 0);
-            this.lbl91.Name = "lbl91";
-            this.lbl91.Size = new System.Drawing.Size(79, 61);
-            this.lbl91.TabIndex = 9;
-            this.lbl91.Text = "91";
-            this.lbl91.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl81
-            // 
-            this.lbl81.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl81.AutoSize = true;
-            this.lbl81.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl81.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl81.Location = new System.Drawing.Point(3, 61);
-            this.lbl81.Name = "lbl81";
-            this.lbl81.Size = new System.Drawing.Size(74, 61);
-            this.lbl81.TabIndex = 10;
-            this.lbl81.Text = "81";
-            this.lbl81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl82
-            // 
-            this.lbl82.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl82.AutoSize = true;
-            this.lbl82.BackColor = System.Drawing.Color.Gold;
-            this.lbl82.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl82.Location = new System.Drawing.Point(83, 61);
-            this.lbl82.Name = "lbl82";
-            this.lbl82.Size = new System.Drawing.Size(74, 61);
-            this.lbl82.TabIndex = 11;
-            this.lbl82.Text = "82";
-            this.lbl82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl83
-            // 
-            this.lbl83.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl83.AutoSize = true;
-            this.lbl83.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl83.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl83.Location = new System.Drawing.Point(163, 61);
-            this.lbl83.Name = "lbl83";
-            this.lbl83.Size = new System.Drawing.Size(74, 61);
-            this.lbl83.TabIndex = 12;
-            this.lbl83.Text = "83";
-            this.lbl83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl87
-            // 
-            this.lbl87.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl87.AutoSize = true;
-            this.lbl87.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl87.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl87.Location = new System.Drawing.Point(483, 61);
-            this.lbl87.Name = "lbl87";
-            this.lbl87.Size = new System.Drawing.Size(74, 61);
-            this.lbl87.TabIndex = 16;
-            this.lbl87.Text = "87";
-            this.lbl87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl88
-            // 
-            this.lbl88.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl88.AutoSize = true;
-            this.lbl88.BackColor = System.Drawing.Color.Gold;
-            this.lbl88.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl88.Location = new System.Drawing.Point(563, 61);
-            this.lbl88.Name = "lbl88";
-            this.lbl88.Size = new System.Drawing.Size(74, 61);
-            this.lbl88.TabIndex = 17;
-            this.lbl88.Text = "88";
-            this.lbl88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl89
-            // 
-            this.lbl89.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl89.AutoSize = true;
-            this.lbl89.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl89.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl89.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl89.Location = new System.Drawing.Point(643, 61);
-            this.lbl89.Name = "lbl89";
-            this.lbl89.Size = new System.Drawing.Size(74, 61);
-            this.lbl89.TabIndex = 18;
-            this.lbl89.Text = "89";
-            this.lbl89.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl90
-            // 
-            this.lbl90.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl90.AutoSize = true;
-            this.lbl90.BackColor = System.Drawing.Color.Gold;
-            this.lbl90.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl90.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl90.Location = new System.Drawing.Point(723, 61);
-            this.lbl90.Name = "lbl90";
-            this.lbl90.Size = new System.Drawing.Size(79, 61);
-            this.lbl90.TabIndex = 19;
-            this.lbl90.Text = "90";
-            this.lbl90.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl80
-            // 
-            this.lbl80.AutoSize = true;
-            this.lbl80.BackColor = System.Drawing.Color.Salmon;
-            this.lbl80.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl80.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl80.Location = new System.Drawing.Point(3, 122);
-            this.lbl80.Name = "lbl80";
-            this.lbl80.Size = new System.Drawing.Size(74, 61);
-            this.lbl80.TabIndex = 20;
-            this.lbl80.Text = "80";
-            this.lbl80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl79
-            // 
-            this.lbl79.AutoSize = true;
-            this.lbl79.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl79.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl79.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl79.Location = new System.Drawing.Point(83, 122);
-            this.lbl79.Name = "lbl79";
-            this.lbl79.Size = new System.Drawing.Size(74, 61);
-            this.lbl79.TabIndex = 21;
-            this.lbl79.Text = "79";
-            this.lbl79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl78
-            // 
-            this.lbl78.AutoSize = true;
-            this.lbl78.BackColor = System.Drawing.Color.Salmon;
-            this.lbl78.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl78.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl78.Location = new System.Drawing.Point(163, 122);
-            this.lbl78.Name = "lbl78";
-            this.lbl78.Size = new System.Drawing.Size(74, 61);
-            this.lbl78.TabIndex = 22;
-            this.lbl78.Text = "78";
-            this.lbl78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl77
-            // 
-            this.lbl77.AutoSize = true;
-            this.lbl77.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl77.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl77.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl77.Location = new System.Drawing.Point(243, 122);
-            this.lbl77.Name = "lbl77";
-            this.lbl77.Size = new System.Drawing.Size(74, 61);
-            this.lbl77.TabIndex = 23;
-            this.lbl77.Text = "77";
-            this.lbl77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl74
-            // 
-            this.lbl74.AutoSize = true;
-            this.lbl74.BackColor = System.Drawing.Color.Salmon;
-            this.lbl74.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl74.Location = new System.Drawing.Point(483, 122);
-            this.lbl74.Name = "lbl74";
-            this.lbl74.Size = new System.Drawing.Size(74, 61);
-            this.lbl74.TabIndex = 26;
-            this.lbl74.Text = "74";
-            this.lbl74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl73
-            // 
-            this.lbl73.AutoSize = true;
-            this.lbl73.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl73.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl73.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl73.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl73.Location = new System.Drawing.Point(563, 122);
-            this.lbl73.Name = "lbl73";
-            this.lbl73.Size = new System.Drawing.Size(74, 61);
-            this.lbl73.TabIndex = 27;
-            this.lbl73.Text = "73";
-            this.lbl73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl72
-            // 
-            this.lbl72.AutoSize = true;
-            this.lbl72.BackColor = System.Drawing.Color.Salmon;
-            this.lbl72.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl72.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl72.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl72.Location = new System.Drawing.Point(643, 122);
-            this.lbl72.Name = "lbl72";
-            this.lbl72.Size = new System.Drawing.Size(74, 61);
-            this.lbl72.TabIndex = 28;
-            this.lbl72.Text = "72";
-            this.lbl72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl71
-            // 
-            this.lbl71.AutoSize = true;
-            this.lbl71.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl71.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl71.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl71.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl71.Location = new System.Drawing.Point(723, 122);
-            this.lbl71.Name = "lbl71";
-            this.lbl71.Size = new System.Drawing.Size(79, 61);
-            this.lbl71.TabIndex = 29;
-            this.lbl71.Text = "71";
-            this.lbl71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl61
-            // 
-            this.lbl61.AutoSize = true;
-            this.lbl61.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl61.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl61.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl61.Location = new System.Drawing.Point(3, 183);
-            this.lbl61.Name = "lbl61";
-            this.lbl61.Size = new System.Drawing.Size(74, 61);
-            this.lbl61.TabIndex = 30;
-            this.lbl61.Text = "61";
-            this.lbl61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl62
-            // 
-            this.lbl62.AutoSize = true;
-            this.lbl62.BackColor = System.Drawing.Color.Gold;
-            this.lbl62.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl62.Location = new System.Drawing.Point(83, 183);
-            this.lbl62.Name = "lbl62";
-            this.lbl62.Size = new System.Drawing.Size(74, 61);
-            this.lbl62.TabIndex = 31;
-            this.lbl62.Text = "62";
-            this.lbl62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl63
-            // 
-            this.lbl63.AutoSize = true;
-            this.lbl63.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl63.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl63.Location = new System.Drawing.Point(163, 183);
-            this.lbl63.Name = "lbl63";
-            this.lbl63.Size = new System.Drawing.Size(74, 61);
-            this.lbl63.TabIndex = 32;
-            this.lbl63.Text = "63";
-            this.lbl63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl64
-            // 
-            this.lbl64.AutoSize = true;
-            this.lbl64.BackColor = System.Drawing.Color.Gold;
-            this.lbl64.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl64.Location = new System.Drawing.Point(243, 183);
-            this.lbl64.Name = "lbl64";
-            this.lbl64.Size = new System.Drawing.Size(74, 61);
-            this.lbl64.TabIndex = 33;
-            this.lbl64.Text = "64";
-            this.lbl64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl65
-            // 
-            this.lbl65.AutoSize = true;
-            this.lbl65.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl65.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl65.Location = new System.Drawing.Point(323, 183);
-            this.lbl65.Name = "lbl65";
-            this.lbl65.Size = new System.Drawing.Size(74, 61);
-            this.lbl65.TabIndex = 34;
-            this.lbl65.Text = "65";
-            this.lbl65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl66
-            // 
-            this.lbl66.AutoSize = true;
-            this.lbl66.BackColor = System.Drawing.Color.Gold;
-            this.lbl66.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl66.Location = new System.Drawing.Point(403, 183);
-            this.lbl66.Name = "lbl66";
-            this.lbl66.Size = new System.Drawing.Size(74, 61);
-            this.lbl66.TabIndex = 35;
-            this.lbl66.Text = "66";
-            this.lbl66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl67
-            // 
-            this.lbl67.AutoSize = true;
-            this.lbl67.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl67.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl67.Location = new System.Drawing.Point(483, 183);
-            this.lbl67.Name = "lbl67";
-            this.lbl67.Size = new System.Drawing.Size(74, 61);
-            this.lbl67.TabIndex = 36;
-            this.lbl67.Text = "67";
-            this.lbl67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl68
-            // 
-            this.lbl68.AutoSize = true;
-            this.lbl68.BackColor = System.Drawing.Color.Gold;
-            this.lbl68.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl68.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl68.Location = new System.Drawing.Point(563, 183);
-            this.lbl68.Name = "lbl68";
-            this.lbl68.Size = new System.Drawing.Size(74, 61);
-            this.lbl68.TabIndex = 37;
-            this.lbl68.Text = "68";
-            this.lbl68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl69
-            // 
-            this.lbl69.AutoSize = true;
-            this.lbl69.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl69.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl69.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl69.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl69.Location = new System.Drawing.Point(643, 183);
-            this.lbl69.Name = "lbl69";
-            this.lbl69.Size = new System.Drawing.Size(74, 61);
-            this.lbl69.TabIndex = 38;
-            this.lbl69.Text = "69";
-            this.lbl69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl70
-            // 
-            this.lbl70.AutoSize = true;
-            this.lbl70.BackColor = System.Drawing.Color.Gold;
-            this.lbl70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl70.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl70.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl70.Location = new System.Drawing.Point(723, 183);
-            this.lbl70.Name = "lbl70";
-            this.lbl70.Size = new System.Drawing.Size(79, 61);
-            this.lbl70.TabIndex = 39;
-            this.lbl70.Text = "70";
-            this.lbl70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl60
-            // 
-            this.lbl60.AutoSize = true;
-            this.lbl60.BackColor = System.Drawing.Color.Salmon;
-            this.lbl60.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl60.Location = new System.Drawing.Point(3, 244);
-            this.lbl60.Name = "lbl60";
-            this.lbl60.Size = new System.Drawing.Size(74, 61);
-            this.lbl60.TabIndex = 40;
-            this.lbl60.Text = "60";
-            this.lbl60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl59
-            // 
-            this.lbl59.AutoSize = true;
-            this.lbl59.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl59.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl59.Location = new System.Drawing.Point(83, 244);
-            this.lbl59.Name = "lbl59";
-            this.lbl59.Size = new System.Drawing.Size(74, 61);
-            this.lbl59.TabIndex = 41;
-            this.lbl59.Text = "59";
-            this.lbl59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl58
-            // 
-            this.lbl58.AutoSize = true;
-            this.lbl58.BackColor = System.Drawing.Color.Salmon;
-            this.lbl58.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl58.Location = new System.Drawing.Point(163, 244);
-            this.lbl58.Name = "lbl58";
-            this.lbl58.Size = new System.Drawing.Size(74, 61);
-            this.lbl58.TabIndex = 42;
-            this.lbl58.Text = "58";
-            this.lbl58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl57
-            // 
-            this.lbl57.AutoSize = true;
-            this.lbl57.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl57.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl57.Location = new System.Drawing.Point(243, 244);
-            this.lbl57.Name = "lbl57";
-            this.lbl57.Size = new System.Drawing.Size(74, 61);
-            this.lbl57.TabIndex = 43;
-            this.lbl57.Text = "57";
-            this.lbl57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl56
-            // 
-            this.lbl56.AutoSize = true;
-            this.lbl56.BackColor = System.Drawing.Color.Salmon;
-            this.lbl56.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl56.Location = new System.Drawing.Point(323, 244);
-            this.lbl56.Name = "lbl56";
-            this.lbl56.Size = new System.Drawing.Size(74, 61);
-            this.lbl56.TabIndex = 44;
-            this.lbl56.Text = "56";
-            this.lbl56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl55
-            // 
-            this.lbl55.AutoSize = true;
-            this.lbl55.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl55.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl55.Location = new System.Drawing.Point(403, 244);
-            this.lbl55.Name = "lbl55";
-            this.lbl55.Size = new System.Drawing.Size(74, 61);
-            this.lbl55.TabIndex = 45;
-            this.lbl55.Text = "55";
-            this.lbl55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl54
-            // 
-            this.lbl54.AutoSize = true;
-            this.lbl54.BackColor = System.Drawing.Color.Salmon;
-            this.lbl54.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl54.Location = new System.Drawing.Point(483, 244);
-            this.lbl54.Name = "lbl54";
-            this.lbl54.Size = new System.Drawing.Size(74, 61);
-            this.lbl54.TabIndex = 46;
-            this.lbl54.Text = "54";
-            this.lbl54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl53
-            // 
-            this.lbl53.AutoSize = true;
-            this.lbl53.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl53.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl53.Location = new System.Drawing.Point(563, 244);
-            this.lbl53.Name = "lbl53";
-            this.lbl53.Size = new System.Drawing.Size(74, 61);
-            this.lbl53.TabIndex = 47;
-            this.lbl53.Text = "53";
-            this.lbl53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl52
-            // 
-            this.lbl52.AutoSize = true;
-            this.lbl52.BackColor = System.Drawing.Color.Salmon;
-            this.lbl52.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl52.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl52.Location = new System.Drawing.Point(643, 244);
-            this.lbl52.Name = "lbl52";
-            this.lbl52.Size = new System.Drawing.Size(74, 61);
-            this.lbl52.TabIndex = 48;
-            this.lbl52.Text = "52";
-            this.lbl52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl51
-            // 
-            this.lbl51.AutoSize = true;
-            this.lbl51.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl51.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl51.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl51.Location = new System.Drawing.Point(723, 244);
-            this.lbl51.Name = "lbl51";
-            this.lbl51.Size = new System.Drawing.Size(79, 61);
-            this.lbl51.TabIndex = 49;
-            this.lbl51.Text = "51";
-            this.lbl51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl41
-            // 
-            this.lbl41.AutoSize = true;
-            this.lbl41.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl41.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl41.Location = new System.Drawing.Point(3, 305);
-            this.lbl41.Name = "lbl41";
-            this.lbl41.Size = new System.Drawing.Size(74, 61);
-            this.lbl41.TabIndex = 50;
-            this.lbl41.Text = "41";
-            this.lbl41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl42
-            // 
-            this.lbl42.AutoSize = true;
-            this.lbl42.BackColor = System.Drawing.Color.Gold;
-            this.lbl42.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl42.Location = new System.Drawing.Point(83, 305);
-            this.lbl42.Name = "lbl42";
-            this.lbl42.Size = new System.Drawing.Size(74, 61);
-            this.lbl42.TabIndex = 51;
-            this.lbl42.Text = "42";
-            this.lbl42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl43
-            // 
-            this.lbl43.AutoSize = true;
-            this.lbl43.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl43.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl43.Location = new System.Drawing.Point(163, 305);
-            this.lbl43.Name = "lbl43";
-            this.lbl43.Size = new System.Drawing.Size(74, 61);
-            this.lbl43.TabIndex = 52;
-            this.lbl43.Text = "43";
-            this.lbl43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl44
-            // 
-            this.lbl44.AutoSize = true;
-            this.lbl44.BackColor = System.Drawing.Color.Gold;
-            this.lbl44.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl44.Location = new System.Drawing.Point(243, 305);
-            this.lbl44.Name = "lbl44";
-            this.lbl44.Size = new System.Drawing.Size(74, 61);
-            this.lbl44.TabIndex = 53;
-            this.lbl44.Text = "44";
-            this.lbl44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl45
-            // 
-            this.lbl45.AutoSize = true;
-            this.lbl45.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl45.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl45.Location = new System.Drawing.Point(323, 305);
-            this.lbl45.Name = "lbl45";
-            this.lbl45.Size = new System.Drawing.Size(74, 61);
-            this.lbl45.TabIndex = 54;
-            this.lbl45.Text = "45";
-            this.lbl45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl46
-            // 
-            this.lbl46.AutoSize = true;
-            this.lbl46.BackColor = System.Drawing.Color.Gold;
-            this.lbl46.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl46.Location = new System.Drawing.Point(403, 305);
-            this.lbl46.Name = "lbl46";
-            this.lbl46.Size = new System.Drawing.Size(74, 61);
-            this.lbl46.TabIndex = 55;
-            this.lbl46.Text = "46";
-            this.lbl46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl47
-            // 
-            this.lbl47.AutoSize = true;
-            this.lbl47.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl47.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl47.Location = new System.Drawing.Point(483, 305);
-            this.lbl47.Name = "lbl47";
-            this.lbl47.Size = new System.Drawing.Size(74, 61);
-            this.lbl47.TabIndex = 56;
-            this.lbl47.Text = "47";
-            this.lbl47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl48
-            // 
-            this.lbl48.AutoSize = true;
-            this.lbl48.BackColor = System.Drawing.Color.Gold;
-            this.lbl48.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl48.Location = new System.Drawing.Point(563, 305);
-            this.lbl48.Name = "lbl48";
-            this.lbl48.Size = new System.Drawing.Size(74, 61);
-            this.lbl48.TabIndex = 57;
-            this.lbl48.Text = "48";
-            this.lbl48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl49
-            // 
-            this.lbl49.AutoSize = true;
-            this.lbl49.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl49.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl49.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl49.Location = new System.Drawing.Point(643, 305);
-            this.lbl49.Name = "lbl49";
-            this.lbl49.Size = new System.Drawing.Size(74, 61);
-            this.lbl49.TabIndex = 58;
-            this.lbl49.Text = "49";
-            this.lbl49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl50
-            // 
-            this.lbl50.AutoSize = true;
-            this.lbl50.BackColor = System.Drawing.Color.Gold;
-            this.lbl50.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl50.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl50.Location = new System.Drawing.Point(723, 305);
-            this.lbl50.Name = "lbl50";
-            this.lbl50.Size = new System.Drawing.Size(79, 61);
-            this.lbl50.TabIndex = 59;
-            this.lbl50.Text = "50";
-            this.lbl50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl40
-            // 
-            this.lbl40.AutoSize = true;
-            this.lbl40.BackColor = System.Drawing.Color.Salmon;
-            this.lbl40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl40.Location = new System.Drawing.Point(3, 366);
-            this.lbl40.Name = "lbl40";
-            this.lbl40.Size = new System.Drawing.Size(74, 61);
-            this.lbl40.TabIndex = 60;
-            this.lbl40.Text = "40";
-            this.lbl40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl39
-            // 
-            this.lbl39.AutoSize = true;
-            this.lbl39.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl39.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl39.Location = new System.Drawing.Point(83, 366);
-            this.lbl39.Name = "lbl39";
-            this.lbl39.Size = new System.Drawing.Size(74, 61);
-            this.lbl39.TabIndex = 61;
-            this.lbl39.Text = "39";
-            this.lbl39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl38
-            // 
-            this.lbl38.AutoSize = true;
-            this.lbl38.BackColor = System.Drawing.Color.Salmon;
-            this.lbl38.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl38.Location = new System.Drawing.Point(163, 366);
-            this.lbl38.Name = "lbl38";
-            this.lbl38.Size = new System.Drawing.Size(74, 61);
-            this.lbl38.TabIndex = 62;
-            this.lbl38.Text = "38";
-            this.lbl38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl37
-            // 
-            this.lbl37.AutoSize = true;
-            this.lbl37.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl37.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl37.Location = new System.Drawing.Point(243, 366);
-            this.lbl37.Name = "lbl37";
-            this.lbl37.Size = new System.Drawing.Size(74, 61);
-            this.lbl37.TabIndex = 63;
-            this.lbl37.Text = "37";
-            this.lbl37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl36
-            // 
-            this.lbl36.AutoSize = true;
-            this.lbl36.BackColor = System.Drawing.Color.Salmon;
-            this.lbl36.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl36.Location = new System.Drawing.Point(323, 366);
-            this.lbl36.Name = "lbl36";
-            this.lbl36.Size = new System.Drawing.Size(74, 61);
-            this.lbl36.TabIndex = 64;
-            this.lbl36.Text = "36";
-            this.lbl36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl35
-            // 
-            this.lbl35.AutoSize = true;
-            this.lbl35.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl35.Location = new System.Drawing.Point(403, 366);
-            this.lbl35.Name = "lbl35";
-            this.lbl35.Size = new System.Drawing.Size(74, 61);
-            this.lbl35.TabIndex = 65;
-            this.lbl35.Text = "35";
-            this.lbl35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl34
-            // 
-            this.lbl34.AutoSize = true;
-            this.lbl34.BackColor = System.Drawing.Color.Salmon;
-            this.lbl34.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl34.Location = new System.Drawing.Point(483, 366);
-            this.lbl34.Name = "lbl34";
-            this.lbl34.Size = new System.Drawing.Size(74, 61);
-            this.lbl34.TabIndex = 66;
-            this.lbl34.Text = "34";
-            this.lbl34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl33
-            // 
-            this.lbl33.AutoSize = true;
-            this.lbl33.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl33.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl33.Location = new System.Drawing.Point(563, 366);
-            this.lbl33.Name = "lbl33";
-            this.lbl33.Size = new System.Drawing.Size(74, 61);
-            this.lbl33.TabIndex = 67;
-            this.lbl33.Text = "33";
-            this.lbl33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl32
-            // 
-            this.lbl32.AutoSize = true;
-            this.lbl32.BackColor = System.Drawing.Color.Salmon;
-            this.lbl32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl32.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl32.Location = new System.Drawing.Point(643, 366);
-            this.lbl32.Name = "lbl32";
-            this.lbl32.Size = new System.Drawing.Size(74, 61);
-            this.lbl32.TabIndex = 68;
-            this.lbl32.Text = "32";
-            this.lbl32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl31
-            // 
-            this.lbl31.AutoSize = true;
-            this.lbl31.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl31.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl31.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl31.Location = new System.Drawing.Point(723, 366);
-            this.lbl31.Name = "lbl31";
-            this.lbl31.Size = new System.Drawing.Size(79, 61);
-            this.lbl31.TabIndex = 69;
-            this.lbl31.Text = "31";
-            this.lbl31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl21
-            // 
-            this.lbl21.AutoSize = true;
-            this.lbl21.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl21.Location = new System.Drawing.Point(3, 427);
-            this.lbl21.Name = "lbl21";
-            this.lbl21.Size = new System.Drawing.Size(74, 61);
-            this.lbl21.TabIndex = 70;
-            this.lbl21.Text = "21";
-            this.lbl21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl22
-            // 
-            this.lbl22.AutoSize = true;
-            this.lbl22.BackColor = System.Drawing.Color.Gold;
-            this.lbl22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl22.Location = new System.Drawing.Point(83, 427);
-            this.lbl22.Name = "lbl22";
-            this.lbl22.Size = new System.Drawing.Size(74, 61);
-            this.lbl22.TabIndex = 71;
-            this.lbl22.Text = "22";
-            this.lbl22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl23
-            // 
-            this.lbl23.AutoSize = true;
-            this.lbl23.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl23.Location = new System.Drawing.Point(163, 427);
-            this.lbl23.Name = "lbl23";
-            this.lbl23.Size = new System.Drawing.Size(74, 61);
-            this.lbl23.TabIndex = 72;
-            this.lbl23.Text = "23";
-            this.lbl23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl24
-            // 
-            this.lbl24.AutoSize = true;
-            this.lbl24.BackColor = System.Drawing.Color.Gold;
-            this.lbl24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl24.Location = new System.Drawing.Point(243, 427);
-            this.lbl24.Name = "lbl24";
-            this.lbl24.Size = new System.Drawing.Size(74, 61);
-            this.lbl24.TabIndex = 73;
-            this.lbl24.Text = "24";
-            this.lbl24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl25
-            // 
-            this.lbl25.AutoSize = true;
-            this.lbl25.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl25.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl25.Location = new System.Drawing.Point(323, 427);
-            this.lbl25.Name = "lbl25";
-            this.lbl25.Size = new System.Drawing.Size(74, 61);
-            this.lbl25.TabIndex = 74;
-            this.lbl25.Text = "25";
-            this.lbl25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl26
-            // 
-            this.lbl26.AutoSize = true;
-            this.lbl26.BackColor = System.Drawing.Color.Gold;
-            this.lbl26.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl26.Location = new System.Drawing.Point(403, 427);
-            this.lbl26.Name = "lbl26";
-            this.lbl26.Size = new System.Drawing.Size(74, 61);
-            this.lbl26.TabIndex = 75;
-            this.lbl26.Text = "26";
-            this.lbl26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl27
-            // 
-            this.lbl27.AutoSize = true;
-            this.lbl27.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl27.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl27.Location = new System.Drawing.Point(483, 427);
-            this.lbl27.Name = "lbl27";
-            this.lbl27.Size = new System.Drawing.Size(74, 61);
-            this.lbl27.TabIndex = 76;
-            this.lbl27.Text = "27";
-            this.lbl27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl28
-            // 
-            this.lbl28.AutoSize = true;
-            this.lbl28.BackColor = System.Drawing.Color.Gold;
-            this.lbl28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl28.Location = new System.Drawing.Point(563, 427);
-            this.lbl28.Name = "lbl28";
-            this.lbl28.Size = new System.Drawing.Size(74, 61);
-            this.lbl28.TabIndex = 77;
-            this.lbl28.Text = "28";
-            this.lbl28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl29
-            // 
-            this.lbl29.AutoSize = true;
-            this.lbl29.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl29.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl29.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl29.Location = new System.Drawing.Point(643, 427);
-            this.lbl29.Name = "lbl29";
-            this.lbl29.Size = new System.Drawing.Size(74, 61);
-            this.lbl29.TabIndex = 78;
-            this.lbl29.Text = "29";
-            this.lbl29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl30
-            // 
-            this.lbl30.AutoSize = true;
-            this.lbl30.BackColor = System.Drawing.Color.Gold;
-            this.lbl30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl30.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl30.Location = new System.Drawing.Point(723, 427);
-            this.lbl30.Name = "lbl30";
-            this.lbl30.Size = new System.Drawing.Size(79, 61);
-            this.lbl30.TabIndex = 79;
-            this.lbl30.Text = "30";
-            this.lbl30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl20
-            // 
-            this.lbl20.AutoSize = true;
-            this.lbl20.BackColor = System.Drawing.Color.Salmon;
-            this.lbl20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl20.Location = new System.Drawing.Point(3, 488);
-            this.lbl20.Name = "lbl20";
-            this.lbl20.Size = new System.Drawing.Size(74, 61);
-            this.lbl20.TabIndex = 80;
-            this.lbl20.Text = "20";
-            this.lbl20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl19
-            // 
-            this.lbl19.AutoSize = true;
-            this.lbl19.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl19.Location = new System.Drawing.Point(83, 488);
-            this.lbl19.Name = "lbl19";
-            this.lbl19.Size = new System.Drawing.Size(74, 61);
-            this.lbl19.TabIndex = 81;
-            this.lbl19.Text = "19";
-            this.lbl19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl18
-            // 
-            this.lbl18.AutoSize = true;
-            this.lbl18.BackColor = System.Drawing.Color.Salmon;
-            this.lbl18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl18.Location = new System.Drawing.Point(163, 488);
-            this.lbl18.Name = "lbl18";
-            this.lbl18.Size = new System.Drawing.Size(74, 61);
-            this.lbl18.TabIndex = 82;
-            this.lbl18.Text = "18";
-            this.lbl18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl17
-            // 
-            this.lbl17.AutoSize = true;
-            this.lbl17.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl17.Location = new System.Drawing.Point(243, 488);
-            this.lbl17.Name = "lbl17";
-            this.lbl17.Size = new System.Drawing.Size(74, 61);
-            this.lbl17.TabIndex = 83;
-            this.lbl17.Text = "17";
-            this.lbl17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl16
-            // 
-            this.lbl16.AutoSize = true;
-            this.lbl16.BackColor = System.Drawing.Color.Salmon;
-            this.lbl16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl16.Location = new System.Drawing.Point(323, 488);
-            this.lbl16.Name = "lbl16";
-            this.lbl16.Size = new System.Drawing.Size(74, 61);
-            this.lbl16.TabIndex = 84;
-            this.lbl16.Text = "16";
-            this.lbl16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl15
-            // 
-            this.lbl15.AutoSize = true;
-            this.lbl15.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl15.Location = new System.Drawing.Point(403, 488);
-            this.lbl15.Name = "lbl15";
-            this.lbl15.Size = new System.Drawing.Size(74, 61);
-            this.lbl15.TabIndex = 85;
-            this.lbl15.Text = "15";
-            this.lbl15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl14
-            // 
-            this.lbl14.AutoSize = true;
-            this.lbl14.BackColor = System.Drawing.Color.Salmon;
-            this.lbl14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl14.Location = new System.Drawing.Point(483, 488);
-            this.lbl14.Name = "lbl14";
-            this.lbl14.Size = new System.Drawing.Size(74, 61);
-            this.lbl14.TabIndex = 86;
-            this.lbl14.Text = "14";
-            this.lbl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl13
-            // 
-            this.lbl13.AutoSize = true;
-            this.lbl13.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl13.Location = new System.Drawing.Point(563, 488);
-            this.lbl13.Name = "lbl13";
-            this.lbl13.Size = new System.Drawing.Size(74, 61);
-            this.lbl13.TabIndex = 87;
-            this.lbl13.Text = "13";
-            this.lbl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl12
-            // 
-            this.lbl12.AutoSize = true;
-            this.lbl12.BackColor = System.Drawing.Color.Salmon;
-            this.lbl12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl12.Location = new System.Drawing.Point(643, 488);
-            this.lbl12.Name = "lbl12";
-            this.lbl12.Size = new System.Drawing.Size(74, 61);
-            this.lbl12.TabIndex = 88;
-            this.lbl12.Text = "12";
-            this.lbl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl11
-            // 
-            this.lbl11.AutoSize = true;
-            this.lbl11.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl11.Location = new System.Drawing.Point(723, 488);
-            this.lbl11.Name = "lbl11";
-            this.lbl11.Size = new System.Drawing.Size(79, 61);
-            this.lbl11.TabIndex = 89;
-            this.lbl11.Text = "11";
-            this.lbl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl1
-            // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl1.Location = new System.Drawing.Point(3, 549);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(74, 66);
-            this.lbl1.TabIndex = 90;
-            this.lbl1.Text = "1";
-            this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl2
-            // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.BackColor = System.Drawing.Color.Gold;
-            this.lbl2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl2.Location = new System.Drawing.Point(83, 549);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(74, 66);
-            this.lbl2.TabIndex = 91;
-            this.lbl2.Text = "2";
-            this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl3
-            // 
-            this.lbl3.AutoSize = true;
-            this.lbl3.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl3.Location = new System.Drawing.Point(163, 549);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(74, 66);
-            this.lbl3.TabIndex = 92;
-            this.lbl3.Text = "3";
-            this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // l
-            // 
-            this.l.AutoSize = true;
-            this.l.BackColor = System.Drawing.Color.Gold;
-            this.l.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.l.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.l.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.l.Location = new System.Drawing.Point(243, 549);
-            this.l.Name = "l";
-            this.l.Size = new System.Drawing.Size(74, 66);
-            this.l.TabIndex = 93;
-            this.l.Text = "4";
-            this.l.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl5
-            // 
-            this.lbl5.AutoSize = true;
-            this.lbl5.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl5.Location = new System.Drawing.Point(323, 549);
-            this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(74, 66);
-            this.lbl5.TabIndex = 94;
-            this.lbl5.Text = "5";
-            this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl6
-            // 
-            this.lbl6.AutoSize = true;
-            this.lbl6.BackColor = System.Drawing.Color.Gold;
-            this.lbl6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl6.Location = new System.Drawing.Point(403, 549);
-            this.lbl6.Name = "lbl6";
-            this.lbl6.Size = new System.Drawing.Size(74, 66);
-            this.lbl6.TabIndex = 95;
-            this.lbl6.Text = "6";
-            this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl7
-            // 
-            this.lbl7.AutoSize = true;
-            this.lbl7.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl7.Location = new System.Drawing.Point(483, 549);
-            this.lbl7.Name = "lbl7";
-            this.lbl7.Size = new System.Drawing.Size(74, 66);
-            this.lbl7.TabIndex = 96;
-            this.lbl7.Text = "7";
-            this.lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl8
-            // 
-            this.lbl8.AutoSize = true;
-            this.lbl8.BackColor = System.Drawing.Color.Gold;
-            this.lbl8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl8.Location = new System.Drawing.Point(563, 549);
-            this.lbl8.Name = "lbl8";
-            this.lbl8.Size = new System.Drawing.Size(74, 66);
-            this.lbl8.TabIndex = 97;
-            this.lbl8.Text = "8";
-            this.lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl9
-            // 
-            this.lbl9.AutoSize = true;
-            this.lbl9.BackColor = System.Drawing.Color.SteelBlue;
-            this.lbl9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl9.Location = new System.Drawing.Point(643, 549);
-            this.lbl9.Name = "lbl9";
-            this.lbl9.Size = new System.Drawing.Size(74, 66);
-            this.lbl9.TabIndex = 98;
-            this.lbl9.Text = "9";
-            this.lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl10
-            // 
-            this.lbl10.AutoSize = true;
-            this.lbl10.BackColor = System.Drawing.Color.Gold;
-            this.lbl10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl10.Location = new System.Drawing.Point(723, 549);
-            this.lbl10.Name = "lbl10";
-            this.lbl10.Size = new System.Drawing.Size(79, 66);
-            this.lbl10.TabIndex = 99;
-            this.lbl10.Text = "10";
-            this.lbl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl86
-            // 
-            this.lbl86.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl86.AutoSize = true;
-            this.lbl86.BackColor = System.Drawing.Color.Gold;
-            this.lbl86.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl86.Location = new System.Drawing.Point(403, 61);
-            this.lbl86.Name = "lbl86";
-            this.lbl86.Size = new System.Drawing.Size(74, 61);
-            this.lbl86.TabIndex = 15;
-            this.lbl86.Text = "86";
-            this.lbl86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl97
-            // 
-            this.lbl97.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl97.AutoSize = true;
-            this.lbl97.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl97.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl97.Location = new System.Drawing.Point(243, 0);
-            this.lbl97.Name = "lbl97";
-            this.lbl97.Size = new System.Drawing.Size(74, 61);
-            this.lbl97.TabIndex = 3;
-            this.lbl97.Text = "97";
-            this.lbl97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl84
-            // 
-            this.lbl84.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl84.AutoSize = true;
-            this.lbl84.BackColor = System.Drawing.Color.Gold;
-            this.lbl84.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl84.Location = new System.Drawing.Point(243, 61);
-            this.lbl84.Name = "lbl84";
-            this.lbl84.Size = new System.Drawing.Size(74, 61);
-            this.lbl84.TabIndex = 13;
-            this.lbl84.Text = "84";
-            this.lbl84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl75
-            // 
-            this.lbl75.AutoSize = true;
-            this.lbl75.BackColor = System.Drawing.Color.LimeGreen;
-            this.lbl75.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl75.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl75.Location = new System.Drawing.Point(403, 122);
-            this.lbl75.Name = "lbl75";
-            this.lbl75.Size = new System.Drawing.Size(74, 61);
-            this.lbl75.TabIndex = 25;
-            this.lbl75.Text = "75";
-            this.lbl75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl76
-            // 
-            this.lbl76.AutoSize = true;
-            this.lbl76.BackColor = System.Drawing.Color.Salmon;
-            this.lbl76.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl76.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl76.Location = new System.Drawing.Point(323, 122);
-            this.lbl76.Name = "lbl76";
-            this.lbl76.Size = new System.Drawing.Size(74, 61);
-            this.lbl76.TabIndex = 24;
-            this.lbl76.Text = "76";
-            this.lbl76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // pnlBoard
+            // 
+            this.pnlBoard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlBoard.BackgroundImage")));
+            this.pnlBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlBoard.Controls.Add(this.tblSquars);
+            this.pnlBoard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBoard.Location = new System.Drawing.Point(3, 89);
+            this.pnlBoard.Name = "pnlBoard";
+            this.pnlBoard.Size = new System.Drawing.Size(741, 651);
+            this.pnlBoard.TabIndex = 0;
+            // 
+            // tblSquars
+            // 
+            this.tblSquars.BackColor = System.Drawing.Color.Transparent;
+            this.tblSquars.ColumnCount = 10;
+            this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.Controls.Add(this.tbl1, 0, 9);
+            this.tblSquars.Controls.Add(this.tbl2, 1, 9);
+            this.tblSquars.Controls.Add(this.tbl3, 2, 9);
+            this.tblSquars.Controls.Add(this.tbl4, 3, 9);
+            this.tblSquars.Controls.Add(this.tbl5, 4, 9);
+            this.tblSquars.Controls.Add(this.tbl6, 5, 9);
+            this.tblSquars.Controls.Add(this.tbl7, 6, 9);
+            this.tblSquars.Controls.Add(this.tbl8, 7, 9);
+            this.tblSquars.Controls.Add(this.tbl9, 8, 9);
+            this.tblSquars.Controls.Add(this.tbl10, 9, 9);
+            this.tblSquars.Controls.Add(this.tbl11, 9, 8);
+            this.tblSquars.Controls.Add(this.tbl12, 8, 8);
+            this.tblSquars.Controls.Add(this.tbl13, 7, 8);
+            this.tblSquars.Controls.Add(this.tbl14, 6, 8);
+            this.tblSquars.Controls.Add(this.tbl15, 5, 8);
+            this.tblSquars.Controls.Add(this.tbl16, 4, 8);
+            this.tblSquars.Controls.Add(this.tbl17, 3, 8);
+            this.tblSquars.Controls.Add(this.tbl18, 2, 8);
+            this.tblSquars.Controls.Add(this.tbl19, 1, 8);
+            this.tblSquars.Controls.Add(this.tbl20, 0, 8);
+            this.tblSquars.Controls.Add(this.tbl21, 0, 7);
+            this.tblSquars.Controls.Add(this.tbl22, 1, 7);
+            this.tblSquars.Controls.Add(this.tbl23, 2, 7);
+            this.tblSquars.Controls.Add(this.tbl24, 3, 7);
+            this.tblSquars.Controls.Add(this.tbl, 4, 7);
+            this.tblSquars.Controls.Add(this.tbl26, 5, 7);
+            this.tblSquars.Controls.Add(this.tbl27, 6, 7);
+            this.tblSquars.Controls.Add(this.tbl28, 7, 7);
+            this.tblSquars.Controls.Add(this.tbl29, 8, 7);
+            this.tblSquars.Controls.Add(this.tbl30, 9, 7);
+            this.tblSquars.Controls.Add(this.tbl31, 9, 6);
+            this.tblSquars.Controls.Add(this.tbl32, 8, 6);
+            this.tblSquars.Controls.Add(this.tbl33, 7, 6);
+            this.tblSquars.Controls.Add(this.tbl34, 6, 6);
+            this.tblSquars.Controls.Add(this.tbl35, 5, 6);
+            this.tblSquars.Controls.Add(this.tbl36, 4, 6);
+            this.tblSquars.Controls.Add(this.tbl37, 3, 6);
+            this.tblSquars.Controls.Add(this.tbl38, 2, 6);
+            this.tblSquars.Controls.Add(this.tbl39, 1, 6);
+            this.tblSquars.Controls.Add(this.tbl40, 0, 6);
+            this.tblSquars.Controls.Add(this.tbl41, 0, 5);
+            this.tblSquars.Controls.Add(this.tbl42, 1, 5);
+            this.tblSquars.Controls.Add(this.tbl43, 2, 5);
+            this.tblSquars.Controls.Add(this.tbl44, 3, 5);
+            this.tblSquars.Controls.Add(this.tbl45, 4, 5);
+            this.tblSquars.Controls.Add(this.tbl46, 5, 5);
+            this.tblSquars.Controls.Add(this.tbl47, 6, 5);
+            this.tblSquars.Controls.Add(this.tbl48, 7, 5);
+            this.tblSquars.Controls.Add(this.tbl49, 8, 5);
+            this.tblSquars.Controls.Add(this.tbl50, 9, 5);
+            this.tblSquars.Controls.Add(this.tbl52, 8, 4);
+            this.tblSquars.Controls.Add(this.tbl53, 7, 4);
+            this.tblSquars.Controls.Add(this.tbl54, 6, 4);
+            this.tblSquars.Controls.Add(this.tbl55, 5, 4);
+            this.tblSquars.Controls.Add(this.tbl56, 4, 4);
+            this.tblSquars.Controls.Add(this.tbl57, 3, 4);
+            this.tblSquars.Controls.Add(this.tbl58, 2, 4);
+            this.tblSquars.Controls.Add(this.tbl59, 1, 4);
+            this.tblSquars.Controls.Add(this.tbl60, 0, 4);
+            this.tblSquars.Controls.Add(this.tbl61, 0, 3);
+            this.tblSquars.Controls.Add(this.tbl62, 1, 3);
+            this.tblSquars.Controls.Add(this.tbl63, 2, 3);
+            this.tblSquars.Controls.Add(this.tbl64, 3, 3);
+            this.tblSquars.Controls.Add(this.tbl65, 4, 3);
+            this.tblSquars.Controls.Add(this.tbl66, 5, 3);
+            this.tblSquars.Controls.Add(this.tbl67, 6, 3);
+            this.tblSquars.Controls.Add(this.tbl68, 7, 3);
+            this.tblSquars.Controls.Add(this.tbl69, 8, 3);
+            this.tblSquars.Controls.Add(this.tbl70, 9, 3);
+            this.tblSquars.Controls.Add(this.tbl71, 9, 2);
+            this.tblSquars.Controls.Add(this.tbl72, 8, 2);
+            this.tblSquars.Controls.Add(this.tbl73, 7, 2);
+            this.tblSquars.Controls.Add(this.tbl74, 6, 2);
+            this.tblSquars.Controls.Add(this.tbl75, 5, 2);
+            this.tblSquars.Controls.Add(this.tbl76, 4, 2);
+            this.tblSquars.Controls.Add(this.tbl77, 3, 2);
+            this.tblSquars.Controls.Add(this.tbl78, 2, 2);
+            this.tblSquars.Controls.Add(this.tbl79, 1, 2);
+            this.tblSquars.Controls.Add(this.tbl80, 0, 2);
+            this.tblSquars.Controls.Add(this.tbl81, 0, 1);
+            this.tblSquars.Controls.Add(this.tbl82, 1, 1);
+            this.tblSquars.Controls.Add(this.tbl83, 2, 1);
+            this.tblSquars.Controls.Add(this.tbl84, 3, 1);
+            this.tblSquars.Controls.Add(this.tbl85, 4, 1);
+            this.tblSquars.Controls.Add(this.tbl86, 5, 1);
+            this.tblSquars.Controls.Add(this.tbl87, 6, 1);
+            this.tblSquars.Controls.Add(this.tbl88, 7, 1);
+            this.tblSquars.Controls.Add(this.tbl89, 8, 1);
+            this.tblSquars.Controls.Add(this.tbl90, 9, 1);
+            this.tblSquars.Controls.Add(this.tbl91, 9, 0);
+            this.tblSquars.Controls.Add(this.tbl92, 8, 0);
+            this.tblSquars.Controls.Add(this.tbl93, 7, 0);
+            this.tblSquars.Controls.Add(this.tbl94, 6, 0);
+            this.tblSquars.Controls.Add(this.tbl95, 5, 0);
+            this.tblSquars.Controls.Add(this.tbl96, 4, 0);
+            this.tblSquars.Controls.Add(this.tbl97, 3, 0);
+            this.tblSquars.Controls.Add(this.tbl98, 2, 0);
+            this.tblSquars.Controls.Add(this.tbl99, 1, 0);
+            this.tblSquars.Controls.Add(this.tbl100, 0, 0);
+            this.tblSquars.Controls.Add(this.tbl51, 9, 4);
+            this.tblSquars.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblSquars.Location = new System.Drawing.Point(0, 0);
+            this.tblSquars.Name = "tblSquars";
+            this.tblSquars.RowCount = 10;
+            this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblSquars.Size = new System.Drawing.Size(741, 651);
+            this.tblSquars.TabIndex = 0;
+            // 
+            // tbl1
+            // 
+            this.tbl1.ColumnCount = 2;
+            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.23188F));
+            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.76812F));
+            this.tbl1.Location = new System.Drawing.Point(3, 588);
+            this.tbl1.Name = "tbl1";
+            this.tbl1.RowCount = 2;
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl1.Size = new System.Drawing.Size(68, 60);
+            this.tbl1.TabIndex = 100;
+            // 
+            // tbl2
+            // 
+            this.tbl2.AllowDrop = true;
+            this.tbl2.ColumnCount = 2;
+            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
+            this.tbl2.Location = new System.Drawing.Point(77, 588);
+            this.tbl2.Name = "tbl2";
+            this.tbl2.RowCount = 2;
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl2.Size = new System.Drawing.Size(68, 60);
+            this.tbl2.TabIndex = 101;
+            // 
+            // pnlRedPawn
+            // 
+            this.pnlRedPawn.BackColor = System.Drawing.Color.Red;
+            this.pnlRedPawn.Location = new System.Drawing.Point(3, 3);
+            this.pnlRedPawn.Name = "pnlRedPawn";
+            this.pnlRedPawn.Size = new System.Drawing.Size(18, 23);
+            this.pnlRedPawn.TabIndex = 2;
             // 
             // tblToolbar
             // 
-            this.tblToolbar.BackColor = System.Drawing.SystemColors.Control;
-            this.tblToolbar.ColumnCount = 3;
-            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.5122F));
-            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.5122F));
-            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.97561F));
-            this.tblToolbar.Controls.Add(this.btnStart, 0, 0);
+            this.tblToolbar.ColumnCount = 4;
+            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.92443F));
+            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.46424F));
+            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.986505F));
+            this.tblToolbar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.48988F));
+            this.tblToolbar.Controls.Add(this.lblMessage, 3, 0);
             this.tblToolbar.Controls.Add(this.btnThrowTheDice, 1, 0);
-            this.tblToolbar.Controls.Add(this.lblMessage, 2, 0);
+            this.tblToolbar.Controls.Add(this.btnStart, 0, 0);
+            this.tblToolbar.Controls.Add(this.btnStep, 2, 0);
             this.tblToolbar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblToolbar.Location = new System.Drawing.Point(6, 6);
+            this.tblToolbar.Location = new System.Drawing.Point(3, 3);
             this.tblToolbar.Name = "tblToolbar";
             this.tblToolbar.RowCount = 1;
             this.tblToolbar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblToolbar.Size = new System.Drawing.Size(805, 91);
-            this.tblToolbar.TabIndex = 0;
+            this.tblToolbar.Size = new System.Drawing.Size(741, 80);
+            this.tblToolbar.TabIndex = 1;
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblMessage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMessage.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMessage.Location = new System.Drawing.Point(317, 0);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(421, 80);
+            this.lblMessage.TabIndex = 3;
+            this.lblMessage.Text = "Click Start to begin the game";
+            this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnThrowTheDice
+            // 
+            this.btnThrowTheDice.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnThrowTheDice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnThrowTheDice.Enabled = false;
+            this.btnThrowTheDice.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnThrowTheDice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThrowTheDice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnThrowTheDice.Location = new System.Drawing.Point(121, 3);
+            this.btnThrowTheDice.Name = "btnThrowTheDice";
+            this.btnThrowTheDice.Size = new System.Drawing.Size(116, 74);
+            this.btnThrowTheDice.TabIndex = 1;
+            this.btnThrowTheDice.Text = "Throw The Dice";
+            this.btnThrowTheDice.UseVisualStyleBackColor = false;
             // 
             // btnStart
             // 
-            this.btnStart.BackColor = System.Drawing.Color.NavajoWhite;
+            this.btnStart.BackColor = System.Drawing.Color.SandyBrown;
             this.btnStart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnStart.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnStart.Location = new System.Drawing.Point(3, 3);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(151, 85);
+            this.btnStart.Size = new System.Drawing.Size(112, 74);
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = false;
             // 
-            // btnThrowTheDice
+            // btnStep
             // 
-            this.btnThrowTheDice.BackColor = System.Drawing.Color.NavajoWhite;
-            this.btnThrowTheDice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnThrowTheDice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnThrowTheDice.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnThrowTheDice.Location = new System.Drawing.Point(160, 3);
-            this.btnThrowTheDice.Name = "btnThrowTheDice";
-            this.btnThrowTheDice.Size = new System.Drawing.Size(151, 85);
-            this.btnThrowTheDice.TabIndex = 1;
-            this.btnThrowTheDice.Text = "Throw the dice";
-            this.btnThrowTheDice.UseVisualStyleBackColor = false;
+            this.btnStep.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btnStep.Enabled = false;
+            this.btnStep.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStep.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnStep.Location = new System.Drawing.Point(243, 3);
+            this.btnStep.Name = "btnStep";
+            this.btnStep.Size = new System.Drawing.Size(68, 74);
+            this.btnStep.TabIndex = 2;
+            this.btnStep.Text = "Step";
+            this.btnStep.UseVisualStyleBackColor = false;
             // 
-            // lblMessage
+            // tableLayoutPanel3
             // 
-            this.lblMessage.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblMessage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblMessage.Location = new System.Drawing.Point(317, 0);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(485, 91);
-            this.lblMessage.TabIndex = 2;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.23188F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.76812F));
+            this.tableLayoutPanel3.Controls.Add(this.panel3, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Red;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(19, 14);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.MediumBlue;
+            this.panel4.Location = new System.Drawing.Point(3, 33);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(19, 24);
+            this.panel4.TabIndex = 1;
+            // 
+            // pnlBluePawn
+            // 
+            this.pnlBluePawn.BackColor = System.Drawing.Color.MediumBlue;
+            this.pnlBluePawn.Location = new System.Drawing.Point(3, 32);
+            this.pnlBluePawn.Name = "pnlBluePawn";
+            this.pnlBluePawn.Size = new System.Drawing.Size(20, 24);
+            this.pnlBluePawn.TabIndex = 0;
+            // 
+            // tbl3
+            // 
+            this.tbl3.ColumnCount = 2;
+            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
+            this.tbl3.Location = new System.Drawing.Point(151, 588);
+            this.tbl3.Name = "tbl3";
+            this.tbl3.RowCount = 2;
+            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl3.Size = new System.Drawing.Size(68, 60);
+            this.tbl3.TabIndex = 102;
+            // 
+            // tbl4
+            // 
+            this.tbl4.ColumnCount = 2;
+            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.70588F));
+            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.29412F));
+            this.tbl4.Location = new System.Drawing.Point(225, 588);
+            this.tbl4.Name = "tbl4";
+            this.tbl4.RowCount = 2;
+            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl4.Size = new System.Drawing.Size(68, 60);
+            this.tbl4.TabIndex = 103;
+            // 
+            // tbl5
+            // 
+            this.tbl5.ColumnCount = 2;
+            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.35294F));
+            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.64706F));
+            this.tbl5.Location = new System.Drawing.Point(299, 588);
+            this.tbl5.Name = "tbl5";
+            this.tbl5.RowCount = 2;
+            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl5.Size = new System.Drawing.Size(68, 60);
+            this.tbl5.TabIndex = 104;
+            // 
+            // tbl6
+            // 
+            this.tbl6.ColumnCount = 2;
+            this.tbl6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.88235F));
+            this.tbl6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.11765F));
+            this.tbl6.Location = new System.Drawing.Point(373, 588);
+            this.tbl6.Name = "tbl6";
+            this.tbl6.RowCount = 2;
+            this.tbl6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl6.Size = new System.Drawing.Size(68, 60);
+            this.tbl6.TabIndex = 105;
+            // 
+            // tbl7
+            // 
+            this.tbl7.ColumnCount = 2;
+            this.tbl7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
+            this.tbl7.Location = new System.Drawing.Point(447, 588);
+            this.tbl7.Name = "tbl7";
+            this.tbl7.RowCount = 2;
+            this.tbl7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl7.Size = new System.Drawing.Size(68, 60);
+            this.tbl7.TabIndex = 106;
+            // 
+            // tbl8
+            // 
+            this.tbl8.ColumnCount = 2;
+            this.tbl8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
+            this.tbl8.Location = new System.Drawing.Point(521, 588);
+            this.tbl8.Name = "tbl8";
+            this.tbl8.RowCount = 2;
+            this.tbl8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl8.Size = new System.Drawing.Size(68, 60);
+            this.tbl8.TabIndex = 107;
+            // 
+            // tbl9
+            // 
+            this.tbl9.ColumnCount = 2;
+            this.tbl9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
+            this.tbl9.Location = new System.Drawing.Point(595, 588);
+            this.tbl9.Name = "tbl9";
+            this.tbl9.RowCount = 2;
+            this.tbl9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl9.Size = new System.Drawing.Size(68, 60);
+            this.tbl9.TabIndex = 108;
+            // 
+            // tbl10
+            // 
+            this.tbl10.ColumnCount = 2;
+            this.tbl10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.23188F));
+            this.tbl10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.76812F));
+            this.tbl10.Location = new System.Drawing.Point(669, 588);
+            this.tbl10.Name = "tbl10";
+            this.tbl10.RowCount = 2;
+            this.tbl10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl10.Size = new System.Drawing.Size(69, 60);
+            this.tbl10.TabIndex = 109;
+            // 
+            // tbl11
+            // 
+            this.tbl11.ColumnCount = 2;
+            this.tbl11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.68116F));
+            this.tbl11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.31884F));
+            this.tbl11.Location = new System.Drawing.Point(669, 523);
+            this.tbl11.Name = "tbl11";
+            this.tbl11.RowCount = 2;
+            this.tbl11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl11.Size = new System.Drawing.Size(69, 59);
+            this.tbl11.TabIndex = 110;
+            // 
+            // tbl12
+            // 
+            this.tbl12.ColumnCount = 2;
+            this.tbl12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl12.Location = new System.Drawing.Point(595, 523);
+            this.tbl12.Name = "tbl12";
+            this.tbl12.RowCount = 2;
+            this.tbl12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl12.Size = new System.Drawing.Size(68, 59);
+            this.tbl12.TabIndex = 111;
+            // 
+            // tbl13
+            // 
+            this.tbl13.ColumnCount = 2;
+            this.tbl13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl13.Location = new System.Drawing.Point(521, 523);
+            this.tbl13.Name = "tbl13";
+            this.tbl13.RowCount = 2;
+            this.tbl13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl13.Size = new System.Drawing.Size(68, 59);
+            this.tbl13.TabIndex = 112;
+            // 
+            // tbl14
+            // 
+            this.tbl14.ColumnCount = 2;
+            this.tbl14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl14.Location = new System.Drawing.Point(447, 523);
+            this.tbl14.Name = "tbl14";
+            this.tbl14.RowCount = 2;
+            this.tbl14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl14.Size = new System.Drawing.Size(68, 59);
+            this.tbl14.TabIndex = 113;
+            // 
+            // tbl15
+            // 
+            this.tbl15.ColumnCount = 2;
+            this.tbl15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl15.Location = new System.Drawing.Point(373, 523);
+            this.tbl15.Name = "tbl15";
+            this.tbl15.RowCount = 2;
+            this.tbl15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl15.Size = new System.Drawing.Size(68, 59);
+            this.tbl15.TabIndex = 114;
+            // 
+            // tbl16
+            // 
+            this.tbl16.ColumnCount = 2;
+            this.tbl16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl16.Location = new System.Drawing.Point(299, 523);
+            this.tbl16.Name = "tbl16";
+            this.tbl16.RowCount = 2;
+            this.tbl16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl16.Size = new System.Drawing.Size(68, 59);
+            this.tbl16.TabIndex = 115;
+            // 
+            // tbl17
+            // 
+            this.tbl17.ColumnCount = 2;
+            this.tbl17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl17.Location = new System.Drawing.Point(225, 523);
+            this.tbl17.Name = "tbl17";
+            this.tbl17.RowCount = 2;
+            this.tbl17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl17.Size = new System.Drawing.Size(68, 59);
+            this.tbl17.TabIndex = 116;
+            // 
+            // tbl18
+            // 
+            this.tbl18.ColumnCount = 2;
+            this.tbl18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
+            this.tbl18.Location = new System.Drawing.Point(151, 523);
+            this.tbl18.Name = "tbl18";
+            this.tbl18.RowCount = 2;
+            this.tbl18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl18.Size = new System.Drawing.Size(68, 59);
+            this.tbl18.TabIndex = 117;
+            // 
+            // tbl19
+            // 
+            this.tbl19.ColumnCount = 2;
+            this.tbl19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
+            this.tbl19.Location = new System.Drawing.Point(77, 523);
+            this.tbl19.Name = "tbl19";
+            this.tbl19.RowCount = 2;
+            this.tbl19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl19.Size = new System.Drawing.Size(68, 59);
+            this.tbl19.TabIndex = 118;
+            // 
+            // tbl20
+            // 
+            this.tbl20.ColumnCount = 2;
+            this.tbl20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
+            this.tbl20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
+            this.tbl20.Controls.Add(this.pnlBluePawn, 0, 1);
+            this.tbl20.Controls.Add(this.pnlRedPawn, 0, 0);
+            this.tbl20.Location = new System.Drawing.Point(3, 523);
+            this.tbl20.Name = "tbl20";
+            this.tbl20.RowCount = 2;
+            this.tbl20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl20.Size = new System.Drawing.Size(68, 59);
+            this.tbl20.TabIndex = 119;
+            // 
+            // tbl21
+            // 
+            this.tbl21.ColumnCount = 2;
+            this.tbl21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl21.Location = new System.Drawing.Point(3, 458);
+            this.tbl21.Name = "tbl21";
+            this.tbl21.RowCount = 2;
+            this.tbl21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl21.Size = new System.Drawing.Size(68, 59);
+            this.tbl21.TabIndex = 120;
+            // 
+            // tbl22
+            // 
+            this.tbl22.ColumnCount = 2;
+            this.tbl22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl22.Location = new System.Drawing.Point(77, 458);
+            this.tbl22.Name = "tbl22";
+            this.tbl22.RowCount = 2;
+            this.tbl22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl22.Size = new System.Drawing.Size(68, 59);
+            this.tbl22.TabIndex = 121;
+            // 
+            // tbl23
+            // 
+            this.tbl23.ColumnCount = 2;
+            this.tbl23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl23.Location = new System.Drawing.Point(151, 458);
+            this.tbl23.Name = "tbl23";
+            this.tbl23.RowCount = 2;
+            this.tbl23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl23.Size = new System.Drawing.Size(68, 59);
+            this.tbl23.TabIndex = 122;
+            // 
+            // tbl24
+            // 
+            this.tbl24.ColumnCount = 2;
+            this.tbl24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl24.Location = new System.Drawing.Point(225, 458);
+            this.tbl24.Name = "tbl24";
+            this.tbl24.RowCount = 2;
+            this.tbl24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl24.Size = new System.Drawing.Size(68, 59);
+            this.tbl24.TabIndex = 123;
+            // 
+            // tbl
+            // 
+            this.tbl.ColumnCount = 2;
+            this.tbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl.Location = new System.Drawing.Point(299, 458);
+            this.tbl.Name = "tbl";
+            this.tbl.RowCount = 2;
+            this.tbl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl.Size = new System.Drawing.Size(68, 59);
+            this.tbl.TabIndex = 124;
+            // 
+            // tbl26
+            // 
+            this.tbl26.ColumnCount = 2;
+            this.tbl26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl26.Location = new System.Drawing.Point(373, 458);
+            this.tbl26.Name = "tbl26";
+            this.tbl26.RowCount = 2;
+            this.tbl26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl26.Size = new System.Drawing.Size(68, 59);
+            this.tbl26.TabIndex = 125;
+            // 
+            // tbl27
+            // 
+            this.tbl27.ColumnCount = 2;
+            this.tbl27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl27.Location = new System.Drawing.Point(447, 458);
+            this.tbl27.Name = "tbl27";
+            this.tbl27.RowCount = 2;
+            this.tbl27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl27.Size = new System.Drawing.Size(68, 59);
+            this.tbl27.TabIndex = 126;
+            // 
+            // tbl28
+            // 
+            this.tbl28.ColumnCount = 2;
+            this.tbl28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl28.Location = new System.Drawing.Point(521, 458);
+            this.tbl28.Name = "tbl28";
+            this.tbl28.RowCount = 2;
+            this.tbl28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl28.Size = new System.Drawing.Size(68, 59);
+            this.tbl28.TabIndex = 127;
+            // 
+            // tbl29
+            // 
+            this.tbl29.ColumnCount = 2;
+            this.tbl29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl29.Location = new System.Drawing.Point(595, 458);
+            this.tbl29.Name = "tbl29";
+            this.tbl29.RowCount = 2;
+            this.tbl29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl29.Size = new System.Drawing.Size(68, 59);
+            this.tbl29.TabIndex = 128;
+            // 
+            // tbl30
+            // 
+            this.tbl30.ColumnCount = 2;
+            this.tbl30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.78261F));
+            this.tbl30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.21739F));
+            this.tbl30.Location = new System.Drawing.Point(669, 458);
+            this.tbl30.Name = "tbl30";
+            this.tbl30.RowCount = 2;
+            this.tbl30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl30.Size = new System.Drawing.Size(69, 59);
+            this.tbl30.TabIndex = 129;
+            // 
+            // tbl31
+            // 
+            this.tbl31.ColumnCount = 2;
+            this.tbl31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.78261F));
+            this.tbl31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.21739F));
+            this.tbl31.Location = new System.Drawing.Point(669, 393);
+            this.tbl31.Name = "tbl31";
+            this.tbl31.RowCount = 2;
+            this.tbl31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl31.Size = new System.Drawing.Size(69, 59);
+            this.tbl31.TabIndex = 130;
+            // 
+            // tbl32
+            // 
+            this.tbl32.ColumnCount = 2;
+            this.tbl32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl32.Location = new System.Drawing.Point(595, 393);
+            this.tbl32.Name = "tbl32";
+            this.tbl32.RowCount = 2;
+            this.tbl32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl32.Size = new System.Drawing.Size(68, 59);
+            this.tbl32.TabIndex = 131;
+            // 
+            // tbl33
+            // 
+            this.tbl33.ColumnCount = 2;
+            this.tbl33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl33.Location = new System.Drawing.Point(521, 393);
+            this.tbl33.Name = "tbl33";
+            this.tbl33.RowCount = 2;
+            this.tbl33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl33.Size = new System.Drawing.Size(68, 59);
+            this.tbl33.TabIndex = 132;
+            // 
+            // tbl34
+            // 
+            this.tbl34.ColumnCount = 2;
+            this.tbl34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl34.Location = new System.Drawing.Point(447, 393);
+            this.tbl34.Name = "tbl34";
+            this.tbl34.RowCount = 2;
+            this.tbl34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl34.Size = new System.Drawing.Size(68, 59);
+            this.tbl34.TabIndex = 133;
+            // 
+            // tbl35
+            // 
+            this.tbl35.ColumnCount = 2;
+            this.tbl35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl35.Location = new System.Drawing.Point(373, 393);
+            this.tbl35.Name = "tbl35";
+            this.tbl35.RowCount = 2;
+            this.tbl35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl35.Size = new System.Drawing.Size(68, 59);
+            this.tbl35.TabIndex = 134;
+            // 
+            // tbl36
+            // 
+            this.tbl36.ColumnCount = 2;
+            this.tbl36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl36.Location = new System.Drawing.Point(299, 393);
+            this.tbl36.Name = "tbl36";
+            this.tbl36.RowCount = 2;
+            this.tbl36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl36.Size = new System.Drawing.Size(68, 59);
+            this.tbl36.TabIndex = 135;
+            // 
+            // tbl37
+            // 
+            this.tbl37.ColumnCount = 2;
+            this.tbl37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl37.Location = new System.Drawing.Point(225, 393);
+            this.tbl37.Name = "tbl37";
+            this.tbl37.RowCount = 2;
+            this.tbl37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl37.Size = new System.Drawing.Size(68, 59);
+            this.tbl37.TabIndex = 136;
+            // 
+            // tbl38
+            // 
+            this.tbl38.ColumnCount = 2;
+            this.tbl38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl38.Location = new System.Drawing.Point(151, 393);
+            this.tbl38.Name = "tbl38";
+            this.tbl38.RowCount = 2;
+            this.tbl38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl38.Size = new System.Drawing.Size(68, 59);
+            this.tbl38.TabIndex = 137;
+            // 
+            // tbl39
+            // 
+            this.tbl39.ColumnCount = 2;
+            this.tbl39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl39.Location = new System.Drawing.Point(77, 393);
+            this.tbl39.Name = "tbl39";
+            this.tbl39.RowCount = 2;
+            this.tbl39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl39.Size = new System.Drawing.Size(68, 59);
+            this.tbl39.TabIndex = 138;
+            // 
+            // tbl40
+            // 
+            this.tbl40.ColumnCount = 2;
+            this.tbl40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl40.Location = new System.Drawing.Point(3, 393);
+            this.tbl40.Name = "tbl40";
+            this.tbl40.RowCount = 2;
+            this.tbl40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl40.Size = new System.Drawing.Size(68, 59);
+            this.tbl40.TabIndex = 139;
+            // 
+            // tbl41
+            // 
+            this.tbl41.ColumnCount = 2;
+            this.tbl41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl41.Location = new System.Drawing.Point(3, 328);
+            this.tbl41.Name = "tbl41";
+            this.tbl41.RowCount = 2;
+            this.tbl41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl41.Size = new System.Drawing.Size(68, 59);
+            this.tbl41.TabIndex = 140;
+            // 
+            // tbl42
+            // 
+            this.tbl42.ColumnCount = 2;
+            this.tbl42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl42.Location = new System.Drawing.Point(77, 328);
+            this.tbl42.Name = "tbl42";
+            this.tbl42.RowCount = 2;
+            this.tbl42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl42.Size = new System.Drawing.Size(68, 59);
+            this.tbl42.TabIndex = 141;
+            // 
+            // tbl43
+            // 
+            this.tbl43.ColumnCount = 2;
+            this.tbl43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl43.Location = new System.Drawing.Point(151, 328);
+            this.tbl43.Name = "tbl43";
+            this.tbl43.RowCount = 2;
+            this.tbl43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl43.Size = new System.Drawing.Size(68, 59);
+            this.tbl43.TabIndex = 142;
+            // 
+            // tbl44
+            // 
+            this.tbl44.ColumnCount = 2;
+            this.tbl44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl44.Location = new System.Drawing.Point(225, 328);
+            this.tbl44.Name = "tbl44";
+            this.tbl44.RowCount = 2;
+            this.tbl44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl44.Size = new System.Drawing.Size(68, 59);
+            this.tbl44.TabIndex = 143;
+            // 
+            // tbl45
+            // 
+            this.tbl45.ColumnCount = 2;
+            this.tbl45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl45.Location = new System.Drawing.Point(299, 328);
+            this.tbl45.Name = "tbl45";
+            this.tbl45.RowCount = 2;
+            this.tbl45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl45.Size = new System.Drawing.Size(68, 59);
+            this.tbl45.TabIndex = 144;
+            // 
+            // tbl46
+            // 
+            this.tbl46.ColumnCount = 2;
+            this.tbl46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl46.Location = new System.Drawing.Point(373, 328);
+            this.tbl46.Name = "tbl46";
+            this.tbl46.RowCount = 2;
+            this.tbl46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl46.Size = new System.Drawing.Size(68, 59);
+            this.tbl46.TabIndex = 145;
+            // 
+            // tbl47
+            // 
+            this.tbl47.ColumnCount = 2;
+            this.tbl47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl47.Location = new System.Drawing.Point(447, 328);
+            this.tbl47.Name = "tbl47";
+            this.tbl47.RowCount = 2;
+            this.tbl47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl47.Size = new System.Drawing.Size(68, 59);
+            this.tbl47.TabIndex = 146;
+            // 
+            // tbl48
+            // 
+            this.tbl48.ColumnCount = 2;
+            this.tbl48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl48.Location = new System.Drawing.Point(521, 328);
+            this.tbl48.Name = "tbl48";
+            this.tbl48.RowCount = 2;
+            this.tbl48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl48.Size = new System.Drawing.Size(68, 59);
+            this.tbl48.TabIndex = 147;
+            // 
+            // tbl49
+            // 
+            this.tbl49.ColumnCount = 2;
+            this.tbl49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl49.Location = new System.Drawing.Point(595, 328);
+            this.tbl49.Name = "tbl49";
+            this.tbl49.RowCount = 2;
+            this.tbl49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl49.Size = new System.Drawing.Size(68, 59);
+            this.tbl49.TabIndex = 148;
+            // 
+            // tbl50
+            // 
+            this.tbl50.ColumnCount = 2;
+            this.tbl50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.78261F));
+            this.tbl50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.21739F));
+            this.tbl50.Location = new System.Drawing.Point(669, 328);
+            this.tbl50.Name = "tbl50";
+            this.tbl50.RowCount = 2;
+            this.tbl50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl50.Size = new System.Drawing.Size(69, 59);
+            this.tbl50.TabIndex = 149;
+            // 
+            // tbl51
+            // 
+            this.tbl51.ColumnCount = 2;
+            this.tbl51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.88406F));
+            this.tbl51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.11594F));
+            this.tbl51.Location = new System.Drawing.Point(669, 263);
+            this.tbl51.Name = "tbl51";
+            this.tbl51.RowCount = 2;
+            this.tbl51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl51.Size = new System.Drawing.Size(69, 59);
+            this.tbl51.TabIndex = 150;
+            // 
+            // tbl52
+            // 
+            this.tbl52.ColumnCount = 2;
+            this.tbl52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl52.Location = new System.Drawing.Point(595, 263);
+            this.tbl52.Name = "tbl52";
+            this.tbl52.RowCount = 2;
+            this.tbl52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl52.Size = new System.Drawing.Size(68, 59);
+            this.tbl52.TabIndex = 151;
+            // 
+            // tbl53
+            // 
+            this.tbl53.ColumnCount = 2;
+            this.tbl53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl53.Location = new System.Drawing.Point(521, 263);
+            this.tbl53.Name = "tbl53";
+            this.tbl53.RowCount = 2;
+            this.tbl53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl53.Size = new System.Drawing.Size(68, 59);
+            this.tbl53.TabIndex = 152;
+            // 
+            // tbl54
+            // 
+            this.tbl54.ColumnCount = 2;
+            this.tbl54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl54.Location = new System.Drawing.Point(447, 263);
+            this.tbl54.Name = "tbl54";
+            this.tbl54.RowCount = 2;
+            this.tbl54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl54.Size = new System.Drawing.Size(68, 59);
+            this.tbl54.TabIndex = 153;
+            // 
+            // tbl55
+            // 
+            this.tbl55.ColumnCount = 2;
+            this.tbl55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl55.Location = new System.Drawing.Point(373, 263);
+            this.tbl55.Name = "tbl55";
+            this.tbl55.RowCount = 2;
+            this.tbl55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl55.Size = new System.Drawing.Size(68, 59);
+            this.tbl55.TabIndex = 154;
+            // 
+            // tbl56
+            // 
+            this.tbl56.ColumnCount = 2;
+            this.tbl56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl56.Location = new System.Drawing.Point(299, 263);
+            this.tbl56.Name = "tbl56";
+            this.tbl56.RowCount = 2;
+            this.tbl56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl56.Size = new System.Drawing.Size(68, 59);
+            this.tbl56.TabIndex = 155;
+            // 
+            // tbl57
+            // 
+            this.tbl57.ColumnCount = 2;
+            this.tbl57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl57.Location = new System.Drawing.Point(225, 263);
+            this.tbl57.Name = "tbl57";
+            this.tbl57.RowCount = 2;
+            this.tbl57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl57.Size = new System.Drawing.Size(68, 59);
+            this.tbl57.TabIndex = 156;
+            // 
+            // tbl58
+            // 
+            this.tbl58.ColumnCount = 2;
+            this.tbl58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl58.Location = new System.Drawing.Point(151, 263);
+            this.tbl58.Name = "tbl58";
+            this.tbl58.RowCount = 2;
+            this.tbl58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl58.Size = new System.Drawing.Size(68, 59);
+            this.tbl58.TabIndex = 157;
+            // 
+            // tbl59
+            // 
+            this.tbl59.ColumnCount = 2;
+            this.tbl59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl59.Location = new System.Drawing.Point(77, 263);
+            this.tbl59.Name = "tbl59";
+            this.tbl59.RowCount = 2;
+            this.tbl59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl59.Size = new System.Drawing.Size(68, 59);
+            this.tbl59.TabIndex = 158;
+            // 
+            // tbl60
+            // 
+            this.tbl60.ColumnCount = 2;
+            this.tbl60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl60.Location = new System.Drawing.Point(3, 263);
+            this.tbl60.Name = "tbl60";
+            this.tbl60.RowCount = 2;
+            this.tbl60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl60.Size = new System.Drawing.Size(68, 59);
+            this.tbl60.TabIndex = 159;
+            // 
+            // tbl61
+            // 
+            this.tbl61.ColumnCount = 2;
+            this.tbl61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl61.Location = new System.Drawing.Point(3, 198);
+            this.tbl61.Name = "tbl61";
+            this.tbl61.RowCount = 2;
+            this.tbl61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl61.Size = new System.Drawing.Size(68, 59);
+            this.tbl61.TabIndex = 160;
+            // 
+            // tbl62
+            // 
+            this.tbl62.ColumnCount = 2;
+            this.tbl62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl62.Location = new System.Drawing.Point(77, 198);
+            this.tbl62.Name = "tbl62";
+            this.tbl62.RowCount = 2;
+            this.tbl62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl62.Size = new System.Drawing.Size(68, 59);
+            this.tbl62.TabIndex = 161;
+            // 
+            // tbl63
+            // 
+            this.tbl63.ColumnCount = 2;
+            this.tbl63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl63.Location = new System.Drawing.Point(151, 198);
+            this.tbl63.Name = "tbl63";
+            this.tbl63.RowCount = 2;
+            this.tbl63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl63.Size = new System.Drawing.Size(68, 59);
+            this.tbl63.TabIndex = 162;
+            // 
+            // tbl64
+            // 
+            this.tbl64.ColumnCount = 2;
+            this.tbl64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl64.Location = new System.Drawing.Point(225, 198);
+            this.tbl64.Name = "tbl64";
+            this.tbl64.RowCount = 2;
+            this.tbl64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl64.Size = new System.Drawing.Size(68, 59);
+            this.tbl64.TabIndex = 163;
+            // 
+            // tbl65
+            // 
+            this.tbl65.ColumnCount = 2;
+            this.tbl65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl65.Location = new System.Drawing.Point(299, 198);
+            this.tbl65.Name = "tbl65";
+            this.tbl65.RowCount = 2;
+            this.tbl65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl65.Size = new System.Drawing.Size(68, 59);
+            this.tbl65.TabIndex = 164;
+            // 
+            // tbl66
+            // 
+            this.tbl66.ColumnCount = 2;
+            this.tbl66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl66.Location = new System.Drawing.Point(373, 198);
+            this.tbl66.Name = "tbl66";
+            this.tbl66.RowCount = 2;
+            this.tbl66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl66.Size = new System.Drawing.Size(68, 59);
+            this.tbl66.TabIndex = 165;
+            // 
+            // tbl67
+            // 
+            this.tbl67.ColumnCount = 2;
+            this.tbl67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl67.Location = new System.Drawing.Point(447, 198);
+            this.tbl67.Name = "tbl67";
+            this.tbl67.RowCount = 2;
+            this.tbl67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl67.Size = new System.Drawing.Size(68, 59);
+            this.tbl67.TabIndex = 166;
+            // 
+            // tbl68
+            // 
+            this.tbl68.ColumnCount = 2;
+            this.tbl68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl68.Location = new System.Drawing.Point(521, 198);
+            this.tbl68.Name = "tbl68";
+            this.tbl68.RowCount = 2;
+            this.tbl68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl68.Size = new System.Drawing.Size(68, 59);
+            this.tbl68.TabIndex = 167;
+            // 
+            // tbl69
+            // 
+            this.tbl69.ColumnCount = 2;
+            this.tbl69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl69.Location = new System.Drawing.Point(595, 198);
+            this.tbl69.Name = "tbl69";
+            this.tbl69.RowCount = 2;
+            this.tbl69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl69.Size = new System.Drawing.Size(68, 59);
+            this.tbl69.TabIndex = 168;
+            // 
+            // tbl70
+            // 
+            this.tbl70.ColumnCount = 2;
+            this.tbl70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl70.Location = new System.Drawing.Point(669, 198);
+            this.tbl70.Name = "tbl70";
+            this.tbl70.RowCount = 2;
+            this.tbl70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl70.Size = new System.Drawing.Size(69, 59);
+            this.tbl70.TabIndex = 169;
+            // 
+            // tbl71
+            // 
+            this.tbl71.ColumnCount = 2;
+            this.tbl71.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl71.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl71.Location = new System.Drawing.Point(669, 133);
+            this.tbl71.Name = "tbl71";
+            this.tbl71.RowCount = 2;
+            this.tbl71.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl71.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl71.Size = new System.Drawing.Size(69, 59);
+            this.tbl71.TabIndex = 170;
+            // 
+            // tbl72
+            // 
+            this.tbl72.ColumnCount = 2;
+            this.tbl72.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl72.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl72.Location = new System.Drawing.Point(595, 133);
+            this.tbl72.Name = "tbl72";
+            this.tbl72.RowCount = 2;
+            this.tbl72.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl72.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl72.Size = new System.Drawing.Size(68, 59);
+            this.tbl72.TabIndex = 171;
+            // 
+            // tbl73
+            // 
+            this.tbl73.ColumnCount = 2;
+            this.tbl73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl73.Location = new System.Drawing.Point(521, 133);
+            this.tbl73.Name = "tbl73";
+            this.tbl73.RowCount = 2;
+            this.tbl73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl73.Size = new System.Drawing.Size(68, 59);
+            this.tbl73.TabIndex = 172;
+            // 
+            // tbl74
+            // 
+            this.tbl74.ColumnCount = 2;
+            this.tbl74.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl74.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl74.Location = new System.Drawing.Point(447, 133);
+            this.tbl74.Name = "tbl74";
+            this.tbl74.RowCount = 2;
+            this.tbl74.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl74.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl74.Size = new System.Drawing.Size(68, 59);
+            this.tbl74.TabIndex = 173;
+            // 
+            // tbl75
+            // 
+            this.tbl75.ColumnCount = 2;
+            this.tbl75.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl75.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl75.Location = new System.Drawing.Point(373, 133);
+            this.tbl75.Name = "tbl75";
+            this.tbl75.RowCount = 2;
+            this.tbl75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl75.Size = new System.Drawing.Size(68, 59);
+            this.tbl75.TabIndex = 174;
+            // 
+            // tbl76
+            // 
+            this.tbl76.ColumnCount = 2;
+            this.tbl76.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl76.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl76.Location = new System.Drawing.Point(299, 133);
+            this.tbl76.Name = "tbl76";
+            this.tbl76.RowCount = 2;
+            this.tbl76.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl76.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl76.Size = new System.Drawing.Size(68, 59);
+            this.tbl76.TabIndex = 175;
+            // 
+            // tbl77
+            // 
+            this.tbl77.ColumnCount = 2;
+            this.tbl77.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl77.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl77.Location = new System.Drawing.Point(225, 133);
+            this.tbl77.Name = "tbl77";
+            this.tbl77.RowCount = 2;
+            this.tbl77.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl77.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl77.Size = new System.Drawing.Size(68, 59);
+            this.tbl77.TabIndex = 176;
+            // 
+            // tbl78
+            // 
+            this.tbl78.ColumnCount = 2;
+            this.tbl78.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl78.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl78.Location = new System.Drawing.Point(151, 133);
+            this.tbl78.Name = "tbl78";
+            this.tbl78.RowCount = 2;
+            this.tbl78.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl78.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl78.Size = new System.Drawing.Size(68, 59);
+            this.tbl78.TabIndex = 177;
+            // 
+            // tbl79
+            // 
+            this.tbl79.ColumnCount = 2;
+            this.tbl79.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl79.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl79.Location = new System.Drawing.Point(77, 133);
+            this.tbl79.Name = "tbl79";
+            this.tbl79.RowCount = 2;
+            this.tbl79.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl79.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl79.Size = new System.Drawing.Size(68, 59);
+            this.tbl79.TabIndex = 178;
+            // 
+            // tbl80
+            // 
+            this.tbl80.ColumnCount = 2;
+            this.tbl80.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl80.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl80.Location = new System.Drawing.Point(3, 133);
+            this.tbl80.Name = "tbl80";
+            this.tbl80.RowCount = 2;
+            this.tbl80.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl80.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl80.Size = new System.Drawing.Size(68, 59);
+            this.tbl80.TabIndex = 179;
+            // 
+            // tbl81
+            // 
+            this.tbl81.ColumnCount = 2;
+            this.tbl81.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl81.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl81.Location = new System.Drawing.Point(3, 68);
+            this.tbl81.Name = "tbl81";
+            this.tbl81.RowCount = 2;
+            this.tbl81.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl81.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl81.Size = new System.Drawing.Size(68, 59);
+            this.tbl81.TabIndex = 180;
+            // 
+            // tbl82
+            // 
+            this.tbl82.ColumnCount = 2;
+            this.tbl82.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl82.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl82.Location = new System.Drawing.Point(77, 68);
+            this.tbl82.Name = "tbl82";
+            this.tbl82.RowCount = 2;
+            this.tbl82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl82.Size = new System.Drawing.Size(68, 59);
+            this.tbl82.TabIndex = 181;
+            // 
+            // tbl83
+            // 
+            this.tbl83.ColumnCount = 2;
+            this.tbl83.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl83.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl83.Location = new System.Drawing.Point(151, 68);
+            this.tbl83.Name = "tbl83";
+            this.tbl83.RowCount = 2;
+            this.tbl83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl83.Size = new System.Drawing.Size(68, 59);
+            this.tbl83.TabIndex = 182;
+            // 
+            // tbl84
+            // 
+            this.tbl84.ColumnCount = 2;
+            this.tbl84.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl84.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl84.Location = new System.Drawing.Point(225, 68);
+            this.tbl84.Name = "tbl84";
+            this.tbl84.RowCount = 2;
+            this.tbl84.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl84.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl84.Size = new System.Drawing.Size(68, 59);
+            this.tbl84.TabIndex = 183;
+            // 
+            // tbl85
+            // 
+            this.tbl85.ColumnCount = 2;
+            this.tbl85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl85.Location = new System.Drawing.Point(299, 68);
+            this.tbl85.Name = "tbl85";
+            this.tbl85.RowCount = 2;
+            this.tbl85.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl85.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl85.Size = new System.Drawing.Size(68, 59);
+            this.tbl85.TabIndex = 184;
+            // 
+            // tbl86
+            // 
+            this.tbl86.ColumnCount = 2;
+            this.tbl86.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl86.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl86.Location = new System.Drawing.Point(373, 68);
+            this.tbl86.Name = "tbl86";
+            this.tbl86.RowCount = 2;
+            this.tbl86.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl86.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl86.Size = new System.Drawing.Size(68, 59);
+            this.tbl86.TabIndex = 185;
+            // 
+            // tbl87
+            // 
+            this.tbl87.ColumnCount = 2;
+            this.tbl87.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl87.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl87.Location = new System.Drawing.Point(447, 68);
+            this.tbl87.Name = "tbl87";
+            this.tbl87.RowCount = 2;
+            this.tbl87.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl87.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl87.Size = new System.Drawing.Size(68, 59);
+            this.tbl87.TabIndex = 186;
+            // 
+            // tbl88
+            // 
+            this.tbl88.ColumnCount = 2;
+            this.tbl88.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl88.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl88.Location = new System.Drawing.Point(521, 68);
+            this.tbl88.Name = "tbl88";
+            this.tbl88.RowCount = 2;
+            this.tbl88.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl88.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl88.Size = new System.Drawing.Size(68, 59);
+            this.tbl88.TabIndex = 187;
+            // 
+            // tbl89
+            // 
+            this.tbl89.ColumnCount = 2;
+            this.tbl89.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl89.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl89.Location = new System.Drawing.Point(595, 68);
+            this.tbl89.Name = "tbl89";
+            this.tbl89.RowCount = 2;
+            this.tbl89.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl89.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl89.Size = new System.Drawing.Size(68, 59);
+            this.tbl89.TabIndex = 188;
+            // 
+            // tbl90
+            // 
+            this.tbl90.ColumnCount = 2;
+            this.tbl90.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl90.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl90.Location = new System.Drawing.Point(669, 68);
+            this.tbl90.Name = "tbl90";
+            this.tbl90.RowCount = 2;
+            this.tbl90.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl90.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl90.Size = new System.Drawing.Size(69, 59);
+            this.tbl90.TabIndex = 189;
+            // 
+            // tbl91
+            // 
+            this.tbl91.ColumnCount = 2;
+            this.tbl91.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl91.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl91.Location = new System.Drawing.Point(669, 3);
+            this.tbl91.Name = "tbl91";
+            this.tbl91.RowCount = 2;
+            this.tbl91.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl91.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl91.Size = new System.Drawing.Size(69, 59);
+            this.tbl91.TabIndex = 190;
+            // 
+            // tbl92
+            // 
+            this.tbl92.ColumnCount = 2;
+            this.tbl92.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl92.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl92.Location = new System.Drawing.Point(595, 3);
+            this.tbl92.Name = "tbl92";
+            this.tbl92.RowCount = 2;
+            this.tbl92.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl92.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl92.Size = new System.Drawing.Size(68, 59);
+            this.tbl92.TabIndex = 191;
+            // 
+            // tbl93
+            // 
+            this.tbl93.ColumnCount = 2;
+            this.tbl93.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl93.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl93.Location = new System.Drawing.Point(521, 3);
+            this.tbl93.Name = "tbl93";
+            this.tbl93.RowCount = 2;
+            this.tbl93.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl93.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl93.Size = new System.Drawing.Size(68, 59);
+            this.tbl93.TabIndex = 192;
+            // 
+            // tbl94
+            // 
+            this.tbl94.ColumnCount = 2;
+            this.tbl94.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl94.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl94.Location = new System.Drawing.Point(447, 3);
+            this.tbl94.Name = "tbl94";
+            this.tbl94.RowCount = 2;
+            this.tbl94.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl94.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl94.Size = new System.Drawing.Size(68, 59);
+            this.tbl94.TabIndex = 193;
+            // 
+            // tbl95
+            // 
+            this.tbl95.ColumnCount = 2;
+            this.tbl95.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl95.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl95.Location = new System.Drawing.Point(373, 3);
+            this.tbl95.Name = "tbl95";
+            this.tbl95.RowCount = 2;
+            this.tbl95.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl95.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl95.Size = new System.Drawing.Size(68, 59);
+            this.tbl95.TabIndex = 194;
+            // 
+            // tbl96
+            // 
+            this.tbl96.ColumnCount = 2;
+            this.tbl96.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl96.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl96.Location = new System.Drawing.Point(299, 3);
+            this.tbl96.Name = "tbl96";
+            this.tbl96.RowCount = 2;
+            this.tbl96.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl96.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl96.Size = new System.Drawing.Size(68, 59);
+            this.tbl96.TabIndex = 195;
+            // 
+            // tbl97
+            // 
+            this.tbl97.ColumnCount = 2;
+            this.tbl97.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl97.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl97.Location = new System.Drawing.Point(225, 3);
+            this.tbl97.Name = "tbl97";
+            this.tbl97.RowCount = 2;
+            this.tbl97.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl97.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl97.Size = new System.Drawing.Size(68, 59);
+            this.tbl97.TabIndex = 196;
+            // 
+            // tbl98
+            // 
+            this.tbl98.ColumnCount = 2;
+            this.tbl98.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl98.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl98.Location = new System.Drawing.Point(151, 3);
+            this.tbl98.Name = "tbl98";
+            this.tbl98.RowCount = 2;
+            this.tbl98.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl98.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl98.Size = new System.Drawing.Size(68, 59);
+            this.tbl98.TabIndex = 197;
+            // 
+            // tbl99
+            // 
+            this.tbl99.ColumnCount = 2;
+            this.tbl99.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl99.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl99.Location = new System.Drawing.Point(77, 3);
+            this.tbl99.Name = "tbl99";
+            this.tbl99.RowCount = 2;
+            this.tbl99.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl99.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl99.Size = new System.Drawing.Size(68, 59);
+            this.tbl99.TabIndex = 198;
+            // 
+            // tbl100
+            // 
+            this.tbl100.ColumnCount = 2;
+            this.tbl100.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl100.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl100.Location = new System.Drawing.Point(3, 3);
+            this.tbl100.Name = "tbl100";
+            this.tbl100.RowCount = 2;
+            this.tbl100.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl100.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl100.Size = new System.Drawing.Size(68, 59);
+            this.tbl100.TabIndex = 199;
             // 
             // frmSnakesAndLadders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 727);
+            this.ClientSize = new System.Drawing.Size(747, 743);
             this.Controls.Add(this.tblMain);
+            this.DoubleBuffered = true;
             this.Name = "frmSnakesAndLadders";
             this.Text = "Snakes & Ladders";
             this.tblMain.ResumeLayout(false);
-            this.tblBoard.ResumeLayout(false);
-            this.tblBoard.PerformLayout();
+            this.pnlBoard.ResumeLayout(false);
+            this.tblSquars.ResumeLayout(false);
             this.tblToolbar.ResumeLayout(false);
+            this.tblToolbar.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tbl20.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1714,109 +1756,117 @@
         #endregion
 
         private TableLayoutPanel tblMain;
+        private Panel pnlBoard;
         private TableLayoutPanel tblToolbar;
-        private Button btnStart;
         private Button btnThrowTheDice;
+        private Button btnStart;
+        private TableLayoutPanel tblSquars;
+        private TableLayoutPanel tbl1;
+        private Panel pnlRedPawn;
+        private TableLayoutPanel tbl2;
+        private TableLayoutPanel tableLayoutPanel3;
+        private Panel panel3;
+        private Panel panel4;
         private Label lblMessage;
-        private TableLayoutPanel tblBoard;
-        private Label lbl100;
-        private Label lbl99;
-        private Label lbl98;
-        private Label lbl97;
-        private Label lbl96;
-        private Label lbl95;
-        private Label lbl94;
-        private Label lbl93;
-        private Label lbl92;
-        private Label lbl91;
-        private Label lbl81;
-        private Label lbl82;
-        private Label lbl83;
-        private Label lbl84;
-        private Label lbl86;
-        private Label lbl87;
-        private Label lbl88;
-        private Label lbl89;
-        private Label lbl90;
-        private Label lbl80;
-        private Label lbl79;
-        private Label lbl78;
-        private Label lbl77;
-        private Label lbl76;
-        private Label lbl75;
-        private Label lbl73;
-        private Label lbl72;
-        private Label lbl71;
-        private Label lbl61;
-        private Label lbl62;
-        private Label lbl63;
-        private Label lbl64;
-        private Label lbl65;
-        private Label lbl66;
-        private Label lbl67;
-        private Label lbl68;
-        private Label lbl69;
-        private Label lbl70;
-        private Label lbl60;
-        private Label lbl59;
-        private Label lbl58;
-        private Label lbl57;
-        private Label lbl56;
-        private Label lbl55;
-        private Label lbl54;
-        private Label lbl53;
-        private Label lbl52;
-        private Label lbl51;
-        private Label lbl41;
-        private Label lbl42;
-        private Label lbl43;
-        private Label lbl45;
-        private Label lbl46;
-        private Label lbl47;
-        private Label lbl48;
-        private Label lbl49;
-        private Label lbl50;
-        private Label lbl40;
-        private Label lbl39;
-        private Label lbl38;
-        private Label lbl37;
-        private Label lbl36;
-        private Label lbl35;
-        private Label lbl34;
-        private Label lbl33;
-        private Label lbl32;
-        private Label lbl31;
-        private Label lbl21;
-        private Label lbl22;
-        private Label lbl23;
-        private Label lbl24;
-        private Label lbl26;
-        private Label lbl27;
-        private Label lbl28;
-        private Label lbl29;
-        private Label lbl30;
-        private Label lbl20;
-        private Label lbl19;
-        private Label lbl18;
-        private Label lbl17;
-        private Label lbl16;
-        private Label lbl15;
-        private Label lbl14;
-        private Label lbl13;
-        private Label lbl12;
-        private Label lbl11;
-        private Label lbl1;
-        private Label lbl2;
-        private Label lbl3;
-        private Label l;
-        private Label lbl5;
-        private Label lbl6;
-        private Label lbl7;
-        private Label lbl8;
-        private Label lbl9;
-        private Label lbl10;
-        private Label lbl74;
-        private Label lbl25;
-        private Label lbl44;
+        private Button btnStep;
+        private TableLayoutPanel tbl3;
+        private TableLayoutPanel tbl4;
+        private TableLayoutPanel tbl5;
+        private TableLayoutPanel tbl6;
+        private TableLayoutPanel tbl7;
+        private TableLayoutPanel tbl8;
+        private TableLayoutPanel tbl9;
+        private TableLayoutPanel tbl10;
+        private TableLayoutPanel tbl11;
+        private TableLayoutPanel tbl12;
+        private TableLayoutPanel tbl13;
+        private TableLayoutPanel tbl14;
+        private TableLayoutPanel tbl15;
+        private TableLayoutPanel tbl16;
+        private TableLayoutPanel tbl17;
+        private TableLayoutPanel tbl18;
+        private TableLayoutPanel tbl19;
+        private TableLayoutPanel tbl20;
+        private Panel pnlBluePawn;
+        private TableLayoutPanel tbl21;
+        private TableLayoutPanel tbl22;
+        private TableLayoutPanel tbl23;
+        private TableLayoutPanel tbl24;
+        private TableLayoutPanel tbl;
+        private TableLayoutPanel tbl26;
+        private TableLayoutPanel tbl27;
+        private TableLayoutPanel tbl28;
+        private TableLayoutPanel tbl29;
+        private TableLayoutPanel tbl30;
+        private TableLayoutPanel tbl31;
+        private TableLayoutPanel tbl32;
+        private TableLayoutPanel tbl33;
+        private TableLayoutPanel tbl34;
+        private TableLayoutPanel tbl35;
+        private TableLayoutPanel tbl36;
+        private TableLayoutPanel tbl37;
+        private TableLayoutPanel tbl38;
+        private TableLayoutPanel tbl39;
+        private TableLayoutPanel tbl40;
+        private TableLayoutPanel tbl41;
+        private TableLayoutPanel tbl42;
+        private TableLayoutPanel tbl43;
+        private TableLayoutPanel tbl44;
+        private TableLayoutPanel tbl45;
+        private TableLayoutPanel tbl46;
+        private TableLayoutPanel tbl47;
+        private TableLayoutPanel tbl48;
+        private TableLayoutPanel tbl49;
+        private TableLayoutPanel tbl50;
+        private TableLayoutPanel tbl52;
+        private TableLayoutPanel tbl53;
+        private TableLayoutPanel tbl54;
+        private TableLayoutPanel tbl55;
+        private TableLayoutPanel tbl56;
+        private TableLayoutPanel tbl57;
+        private TableLayoutPanel tbl58;
+        private TableLayoutPanel tbl59;
+        private TableLayoutPanel tbl60;
+        private TableLayoutPanel tbl61;
+        private TableLayoutPanel tbl62;
+        private TableLayoutPanel tbl63;
+        private TableLayoutPanel tbl64;
+        private TableLayoutPanel tbl65;
+        private TableLayoutPanel tbl66;
+        private TableLayoutPanel tbl67;
+        private TableLayoutPanel tbl68;
+        private TableLayoutPanel tbl69;
+        private TableLayoutPanel tbl70;
+        private TableLayoutPanel tbl71;
+        private TableLayoutPanel tbl72;
+        private TableLayoutPanel tbl73;
+        private TableLayoutPanel tbl74;
+        private TableLayoutPanel tbl75;
+        private TableLayoutPanel tbl76;
+        private TableLayoutPanel tbl77;
+        private TableLayoutPanel tbl78;
+        private TableLayoutPanel tbl79;
+        private TableLayoutPanel tbl80;
+        private TableLayoutPanel tbl81;
+        private TableLayoutPanel tbl82;
+        private TableLayoutPanel tbl83;
+        private TableLayoutPanel tbl84;
+        private TableLayoutPanel tbl85;
+        private TableLayoutPanel tbl86;
+        private TableLayoutPanel tbl87;
+        private TableLayoutPanel tbl88;
+        private TableLayoutPanel tbl89;
+        private TableLayoutPanel tbl90;
+        private TableLayoutPanel tbl91;
+        private TableLayoutPanel tbl92;
+        private TableLayoutPanel tbl93;
+        private TableLayoutPanel tbl94;
+        private TableLayoutPanel tbl95;
+        private TableLayoutPanel tbl96;
+        private TableLayoutPanel tbl97;
+        private TableLayoutPanel tbl98;
+        private TableLayoutPanel tbl99;
+        private TableLayoutPanel tbl100;
+        private TableLayoutPanel tbl51;
     }
 }

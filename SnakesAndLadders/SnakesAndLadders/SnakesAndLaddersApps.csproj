@@ -9,36 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="images\Asset 1.png" />
-    <None Remove="images\Asset 2 %281%29.png" />
-    <None Remove="images\Asset 4.png" />
-    <None Remove="images\Asset 5.png" />
-    <None Remove="images\Asset 6.png" />
-    <None Remove="images\Asset 8.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="images\Asset 1.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="images\Asset 2 (1).png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="images\Asset 4.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="images\Asset 5.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="images\Asset 6.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="images\Asset 8.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\CPUFramework\CPUFramework.csproj" />
   </ItemGroup>
 
