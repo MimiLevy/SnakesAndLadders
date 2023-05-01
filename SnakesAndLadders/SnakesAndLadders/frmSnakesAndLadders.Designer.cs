@@ -33,6 +33,8 @@
             this.pnlBoard = new System.Windows.Forms.Panel();
             this.tblSquars = new System.Windows.Forms.TableLayoutPanel();
             this.tbl1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pnlRedPawn = new System.Windows.Forms.Panel();
+            this.pnlBluePawn = new System.Windows.Forms.Panel();
             this.tbl2 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl3 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl4 = new System.Windows.Forms.TableLayoutPanel();
@@ -52,8 +54,6 @@
             this.tbl18 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl19 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl20 = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlBluePawn = new System.Windows.Forms.Panel();
-            this.pnlRedPawn = new System.Windows.Forms.Panel();
             this.tbl21 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl22 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl23 = new System.Windows.Forms.TableLayoutPanel();
@@ -90,7 +90,6 @@
             this.tbl55 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl56 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl57 = new System.Windows.Forms.TableLayoutPanel();
-            this.tbl58 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl59 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl60 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl61 = new System.Windows.Forms.TableLayoutPanel();
@@ -134,6 +133,7 @@
             this.tbl99 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl100 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl51 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl58 = new System.Windows.Forms.TableLayoutPanel();
             this.tblToolbar = new System.Windows.Forms.TableLayoutPanel();
             this.lblMessage = new System.Windows.Forms.Label();
             this.btnThrowTheDice = new System.Windows.Forms.Button();
@@ -145,7 +145,7 @@
             this.tblMain.SuspendLayout();
             this.pnlBoard.SuspendLayout();
             this.tblSquars.SuspendLayout();
-            this.tbl20.SuspendLayout();
+            this.tbl1.SuspendLayout();
             this.tblToolbar.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
@@ -191,7 +191,6 @@
             this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tblSquars.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblSquars.Controls.Add(this.tbl1, 0, 9);
             this.tblSquars.Controls.Add(this.tbl2, 1, 9);
             this.tblSquars.Controls.Add(this.tbl3, 2, 9);
             this.tblSquars.Controls.Add(this.tbl4, 3, 9);
@@ -247,7 +246,6 @@
             this.tblSquars.Controls.Add(this.tbl55, 5, 4);
             this.tblSquars.Controls.Add(this.tbl56, 4, 4);
             this.tblSquars.Controls.Add(this.tbl57, 3, 4);
-            this.tblSquars.Controls.Add(this.tbl58, 2, 4);
             this.tblSquars.Controls.Add(this.tbl59, 1, 4);
             this.tblSquars.Controls.Add(this.tbl60, 0, 4);
             this.tblSquars.Controls.Add(this.tbl61, 0, 3);
@@ -291,6 +289,8 @@
             this.tblSquars.Controls.Add(this.tbl99, 1, 0);
             this.tblSquars.Controls.Add(this.tbl100, 0, 0);
             this.tblSquars.Controls.Add(this.tbl51, 9, 4);
+            this.tblSquars.Controls.Add(this.tbl58, 2, 4);
+            this.tblSquars.Controls.Add(this.tbl1, 0, 9);
             this.tblSquars.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblSquars.Location = new System.Drawing.Point(0, 0);
             this.tblSquars.Name = "tblSquars";
@@ -312,8 +312,10 @@
             // tbl1
             // 
             this.tbl1.ColumnCount = 2;
-            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.23188F));
-            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.76812F));
+            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.15346F));
+            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.84654F));
+            this.tbl1.Controls.Add(this.pnlRedPawn, 0, 0);
+            this.tbl1.Controls.Add(this.pnlBluePawn, 0, 1);
             this.tbl1.Location = new System.Drawing.Point(3, 588);
             this.tbl1.Name = "tbl1";
             this.tbl1.RowCount = 2;
@@ -321,6 +323,24 @@
             this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tbl1.Size = new System.Drawing.Size(68, 60);
             this.tbl1.TabIndex = 100;
+            // 
+            // pnlRedPawn
+            // 
+            this.pnlRedPawn.BackColor = System.Drawing.Color.Red;
+            this.pnlRedPawn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlRedPawn.Location = new System.Drawing.Point(3, 3);
+            this.pnlRedPawn.Name = "pnlRedPawn";
+            this.pnlRedPawn.Size = new System.Drawing.Size(17, 24);
+            this.pnlRedPawn.TabIndex = 2;
+            // 
+            // pnlBluePawn
+            // 
+            this.pnlBluePawn.BackColor = System.Drawing.Color.MediumBlue;
+            this.pnlBluePawn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBluePawn.Location = new System.Drawing.Point(3, 33);
+            this.pnlBluePawn.Name = "pnlBluePawn";
+            this.pnlBluePawn.Size = new System.Drawing.Size(17, 24);
+            this.pnlBluePawn.TabIndex = 0;
             // 
             // tbl2
             // 
@@ -378,8 +398,8 @@
             // tbl6
             // 
             this.tbl6.ColumnCount = 2;
-            this.tbl6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.88235F));
-            this.tbl6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.11765F));
+            this.tbl6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.67702F));
+            this.tbl6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.32298F));
             this.tbl6.Location = new System.Drawing.Point(373, 588);
             this.tbl6.Name = "tbl6";
             this.tbl6.RowCount = 2;
@@ -443,8 +463,8 @@
             // tbl11
             // 
             this.tbl11.ColumnCount = 2;
-            this.tbl11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.68116F));
-            this.tbl11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.31884F));
+            this.tbl11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.96426F));
+            this.tbl11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.03574F));
             this.tbl11.Location = new System.Drawing.Point(669, 523);
             this.tbl11.Name = "tbl11";
             this.tbl11.RowCount = 2;
@@ -456,8 +476,8 @@
             // tbl12
             // 
             this.tbl12.ColumnCount = 2;
-            this.tbl12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl12.Location = new System.Drawing.Point(595, 523);
             this.tbl12.Name = "tbl12";
             this.tbl12.RowCount = 2;
@@ -469,8 +489,8 @@
             // tbl13
             // 
             this.tbl13.ColumnCount = 2;
-            this.tbl13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl13.Location = new System.Drawing.Point(521, 523);
             this.tbl13.Name = "tbl13";
             this.tbl13.RowCount = 2;
@@ -482,8 +502,8 @@
             // tbl14
             // 
             this.tbl14.ColumnCount = 2;
-            this.tbl14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl14.Location = new System.Drawing.Point(447, 523);
             this.tbl14.Name = "tbl14";
             this.tbl14.RowCount = 2;
@@ -495,8 +515,8 @@
             // tbl15
             // 
             this.tbl15.ColumnCount = 2;
-            this.tbl15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl15.Location = new System.Drawing.Point(373, 523);
             this.tbl15.Name = "tbl15";
             this.tbl15.RowCount = 2;
@@ -508,8 +528,8 @@
             // tbl16
             // 
             this.tbl16.ColumnCount = 2;
-            this.tbl16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl16.Location = new System.Drawing.Point(299, 523);
             this.tbl16.Name = "tbl16";
             this.tbl16.RowCount = 2;
@@ -521,8 +541,8 @@
             // tbl17
             // 
             this.tbl17.ColumnCount = 2;
-            this.tbl17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
+            this.tbl17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
             this.tbl17.Location = new System.Drawing.Point(225, 523);
             this.tbl17.Name = "tbl17";
             this.tbl17.RowCount = 2;
@@ -562,8 +582,6 @@
             this.tbl20.ColumnCount = 2;
             this.tbl20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
             this.tbl20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
-            this.tbl20.Controls.Add(this.pnlBluePawn, 0, 1);
-            this.tbl20.Controls.Add(this.pnlRedPawn, 0, 0);
             this.tbl20.Location = new System.Drawing.Point(3, 523);
             this.tbl20.Name = "tbl20";
             this.tbl20.RowCount = 2;
@@ -572,27 +590,11 @@
             this.tbl20.Size = new System.Drawing.Size(68, 59);
             this.tbl20.TabIndex = 119;
             // 
-            // pnlBluePawn
-            // 
-            this.pnlBluePawn.BackColor = System.Drawing.Color.MediumBlue;
-            this.pnlBluePawn.Location = new System.Drawing.Point(3, 32);
-            this.pnlBluePawn.Name = "pnlBluePawn";
-            this.pnlBluePawn.Size = new System.Drawing.Size(19, 24);
-            this.pnlBluePawn.TabIndex = 0;
-            // 
-            // pnlRedPawn
-            // 
-            this.pnlRedPawn.BackColor = System.Drawing.Color.Red;
-            this.pnlRedPawn.Location = new System.Drawing.Point(3, 3);
-            this.pnlRedPawn.Name = "pnlRedPawn";
-            this.pnlRedPawn.Size = new System.Drawing.Size(18, 23);
-            this.pnlRedPawn.TabIndex = 2;
-            // 
             // tbl21
             // 
             this.tbl21.ColumnCount = 2;
-            this.tbl21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl21.Location = new System.Drawing.Point(3, 458);
             this.tbl21.Name = "tbl21";
             this.tbl21.RowCount = 2;
@@ -604,8 +606,8 @@
             // tbl22
             // 
             this.tbl22.ColumnCount = 2;
-            this.tbl22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.70588F));
+            this.tbl22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.29412F));
             this.tbl22.Location = new System.Drawing.Point(77, 458);
             this.tbl22.Name = "tbl22";
             this.tbl22.RowCount = 2;
@@ -617,8 +619,8 @@
             // tbl23
             // 
             this.tbl23.ColumnCount = 2;
-            this.tbl23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl23.Location = new System.Drawing.Point(151, 458);
             this.tbl23.Name = "tbl23";
             this.tbl23.RowCount = 2;
@@ -630,8 +632,8 @@
             // tbl24
             // 
             this.tbl24.ColumnCount = 2;
-            this.tbl24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl24.Location = new System.Drawing.Point(225, 458);
             this.tbl24.Name = "tbl24";
             this.tbl24.RowCount = 2;
@@ -643,8 +645,8 @@
             // tbl25
             // 
             this.tbl25.ColumnCount = 2;
-            this.tbl25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.35294F));
+            this.tbl25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.64706F));
             this.tbl25.Location = new System.Drawing.Point(299, 458);
             this.tbl25.Name = "tbl25";
             this.tbl25.RowCount = 2;
@@ -656,8 +658,8 @@
             // tbl26
             // 
             this.tbl26.ColumnCount = 2;
-            this.tbl26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl26.Location = new System.Drawing.Point(373, 458);
             this.tbl26.Name = "tbl26";
             this.tbl26.RowCount = 2;
@@ -669,8 +671,8 @@
             // tbl27
             // 
             this.tbl27.ColumnCount = 2;
-            this.tbl27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.35294F));
+            this.tbl27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.64706F));
             this.tbl27.Location = new System.Drawing.Point(447, 458);
             this.tbl27.Name = "tbl27";
             this.tbl27.RowCount = 2;
@@ -682,8 +684,8 @@
             // tbl28
             // 
             this.tbl28.ColumnCount = 2;
-            this.tbl28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
+            this.tbl28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
             this.tbl28.Location = new System.Drawing.Point(521, 458);
             this.tbl28.Name = "tbl28";
             this.tbl28.RowCount = 2;
@@ -695,8 +697,8 @@
             // tbl29
             // 
             this.tbl29.ColumnCount = 2;
-            this.tbl29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl29.Location = new System.Drawing.Point(595, 458);
             this.tbl29.Name = "tbl29";
             this.tbl29.RowCount = 2;
@@ -708,8 +710,8 @@
             // tbl30
             // 
             this.tbl30.ColumnCount = 2;
-            this.tbl30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.78261F));
-            this.tbl30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.21739F));
+            this.tbl30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.92408F));
+            this.tbl30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.07592F));
             this.tbl30.Location = new System.Drawing.Point(669, 458);
             this.tbl30.Name = "tbl30";
             this.tbl30.RowCount = 2;
@@ -721,8 +723,8 @@
             // tbl31
             // 
             this.tbl31.ColumnCount = 2;
-            this.tbl31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.78261F));
-            this.tbl31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.21739F));
+            this.tbl31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.92408F));
+            this.tbl31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.07592F));
             this.tbl31.Location = new System.Drawing.Point(669, 393);
             this.tbl31.Name = "tbl31";
             this.tbl31.RowCount = 2;
@@ -734,8 +736,8 @@
             // tbl32
             // 
             this.tbl32.ColumnCount = 2;
-            this.tbl32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl32.Location = new System.Drawing.Point(595, 393);
             this.tbl32.Name = "tbl32";
             this.tbl32.RowCount = 2;
@@ -747,8 +749,8 @@
             // tbl33
             // 
             this.tbl33.ColumnCount = 2;
-            this.tbl33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl33.Location = new System.Drawing.Point(521, 393);
             this.tbl33.Name = "tbl33";
             this.tbl33.RowCount = 2;
@@ -760,8 +762,8 @@
             // tbl34
             // 
             this.tbl34.ColumnCount = 2;
-            this.tbl34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
+            this.tbl34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
             this.tbl34.Location = new System.Drawing.Point(447, 393);
             this.tbl34.Name = "tbl34";
             this.tbl34.RowCount = 2;
@@ -773,8 +775,8 @@
             // tbl35
             // 
             this.tbl35.ColumnCount = 2;
-            this.tbl35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl35.Location = new System.Drawing.Point(373, 393);
             this.tbl35.Name = "tbl35";
             this.tbl35.RowCount = 2;
@@ -786,8 +788,8 @@
             // tbl36
             // 
             this.tbl36.ColumnCount = 2;
-            this.tbl36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl36.Location = new System.Drawing.Point(299, 393);
             this.tbl36.Name = "tbl36";
             this.tbl36.RowCount = 2;
@@ -799,8 +801,8 @@
             // tbl37
             // 
             this.tbl37.ColumnCount = 2;
-            this.tbl37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl37.Location = new System.Drawing.Point(225, 393);
             this.tbl37.Name = "tbl37";
             this.tbl37.RowCount = 2;
@@ -812,8 +814,8 @@
             // tbl38
             // 
             this.tbl38.ColumnCount = 2;
-            this.tbl38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl38.Location = new System.Drawing.Point(151, 393);
             this.tbl38.Name = "tbl38";
             this.tbl38.RowCount = 2;
@@ -825,8 +827,8 @@
             // tbl39
             // 
             this.tbl39.ColumnCount = 2;
-            this.tbl39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl39.Location = new System.Drawing.Point(77, 393);
             this.tbl39.Name = "tbl39";
             this.tbl39.RowCount = 2;
@@ -838,8 +840,8 @@
             // tbl40
             // 
             this.tbl40.ColumnCount = 2;
-            this.tbl40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl40.Location = new System.Drawing.Point(3, 393);
             this.tbl40.Name = "tbl40";
             this.tbl40.RowCount = 2;
@@ -851,8 +853,8 @@
             // tbl41
             // 
             this.tbl41.ColumnCount = 2;
-            this.tbl41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.88235F));
+            this.tbl41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.11765F));
             this.tbl41.Location = new System.Drawing.Point(3, 328);
             this.tbl41.Name = "tbl41";
             this.tbl41.RowCount = 2;
@@ -864,8 +866,8 @@
             // tbl42
             // 
             this.tbl42.ColumnCount = 2;
-            this.tbl42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl42.Location = new System.Drawing.Point(77, 328);
             this.tbl42.Name = "tbl42";
             this.tbl42.RowCount = 2;
@@ -877,8 +879,8 @@
             // tbl43
             // 
             this.tbl43.ColumnCount = 2;
-            this.tbl43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.35294F));
+            this.tbl43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.64706F));
             this.tbl43.Location = new System.Drawing.Point(151, 328);
             this.tbl43.Name = "tbl43";
             this.tbl43.RowCount = 2;
@@ -890,8 +892,8 @@
             // tbl44
             // 
             this.tbl44.ColumnCount = 2;
-            this.tbl44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl44.Location = new System.Drawing.Point(225, 328);
             this.tbl44.Name = "tbl44";
             this.tbl44.RowCount = 2;
@@ -903,8 +905,8 @@
             // tbl45
             // 
             this.tbl45.ColumnCount = 2;
-            this.tbl45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl45.Location = new System.Drawing.Point(299, 328);
             this.tbl45.Name = "tbl45";
             this.tbl45.RowCount = 2;
@@ -916,8 +918,8 @@
             // tbl46
             // 
             this.tbl46.ColumnCount = 2;
-            this.tbl46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.35294F));
+            this.tbl46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.64706F));
             this.tbl46.Location = new System.Drawing.Point(373, 328);
             this.tbl46.Name = "tbl46";
             this.tbl46.RowCount = 2;
@@ -929,8 +931,8 @@
             // tbl47
             // 
             this.tbl47.ColumnCount = 2;
-            this.tbl47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl47.Location = new System.Drawing.Point(447, 328);
             this.tbl47.Name = "tbl47";
             this.tbl47.RowCount = 2;
@@ -942,8 +944,8 @@
             // tbl48
             // 
             this.tbl48.ColumnCount = 2;
-            this.tbl48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
+            this.tbl48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
             this.tbl48.Location = new System.Drawing.Point(521, 328);
             this.tbl48.Name = "tbl48";
             this.tbl48.RowCount = 2;
@@ -955,8 +957,8 @@
             // tbl49
             // 
             this.tbl49.ColumnCount = 2;
-            this.tbl49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl49.Location = new System.Drawing.Point(595, 328);
             this.tbl49.Name = "tbl49";
             this.tbl49.RowCount = 2;
@@ -968,8 +970,8 @@
             // tbl50
             // 
             this.tbl50.ColumnCount = 2;
-            this.tbl50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.78261F));
-            this.tbl50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.21739F));
+            this.tbl50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.92408F));
+            this.tbl50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.07592F));
             this.tbl50.Location = new System.Drawing.Point(669, 328);
             this.tbl50.Name = "tbl50";
             this.tbl50.RowCount = 2;
@@ -981,8 +983,8 @@
             // tbl52
             // 
             this.tbl52.ColumnCount = 2;
-            this.tbl52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl52.Location = new System.Drawing.Point(595, 263);
             this.tbl52.Name = "tbl52";
             this.tbl52.RowCount = 2;
@@ -994,8 +996,8 @@
             // tbl53
             // 
             this.tbl53.ColumnCount = 2;
-            this.tbl53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl53.Location = new System.Drawing.Point(521, 263);
             this.tbl53.Name = "tbl53";
             this.tbl53.RowCount = 2;
@@ -1007,8 +1009,8 @@
             // tbl54
             // 
             this.tbl54.ColumnCount = 2;
-            this.tbl54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl54.Location = new System.Drawing.Point(447, 263);
             this.tbl54.Name = "tbl54";
             this.tbl54.RowCount = 2;
@@ -1020,8 +1022,8 @@
             // tbl55
             // 
             this.tbl55.ColumnCount = 2;
-            this.tbl55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl55.Location = new System.Drawing.Point(373, 263);
             this.tbl55.Name = "tbl55";
             this.tbl55.RowCount = 2;
@@ -1033,8 +1035,8 @@
             // tbl56
             // 
             this.tbl56.ColumnCount = 2;
-            this.tbl56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl56.Location = new System.Drawing.Point(299, 263);
             this.tbl56.Name = "tbl56";
             this.tbl56.RowCount = 2;
@@ -1046,8 +1048,8 @@
             // tbl57
             // 
             this.tbl57.ColumnCount = 2;
-            this.tbl57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl57.Location = new System.Drawing.Point(225, 263);
             this.tbl57.Name = "tbl57";
             this.tbl57.RowCount = 2;
@@ -1056,24 +1058,11 @@
             this.tbl57.Size = new System.Drawing.Size(68, 59);
             this.tbl57.TabIndex = 156;
             // 
-            // tbl58
-            // 
-            this.tbl58.ColumnCount = 2;
-            this.tbl58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl58.Location = new System.Drawing.Point(151, 263);
-            this.tbl58.Name = "tbl58";
-            this.tbl58.RowCount = 2;
-            this.tbl58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl58.Size = new System.Drawing.Size(68, 59);
-            this.tbl58.TabIndex = 157;
-            // 
             // tbl59
             // 
             this.tbl59.ColumnCount = 2;
-            this.tbl59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
+            this.tbl59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
             this.tbl59.Location = new System.Drawing.Point(77, 263);
             this.tbl59.Name = "tbl59";
             this.tbl59.RowCount = 2;
@@ -1085,8 +1074,8 @@
             // tbl60
             // 
             this.tbl60.ColumnCount = 2;
-            this.tbl60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl60.Location = new System.Drawing.Point(3, 263);
             this.tbl60.Name = "tbl60";
             this.tbl60.RowCount = 2;
@@ -1098,8 +1087,8 @@
             // tbl61
             // 
             this.tbl61.ColumnCount = 2;
-            this.tbl61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl61.Location = new System.Drawing.Point(3, 198);
             this.tbl61.Name = "tbl61";
             this.tbl61.RowCount = 2;
@@ -1111,8 +1100,8 @@
             // tbl62
             // 
             this.tbl62.ColumnCount = 2;
-            this.tbl62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
+            this.tbl62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
             this.tbl62.Location = new System.Drawing.Point(77, 198);
             this.tbl62.Name = "tbl62";
             this.tbl62.RowCount = 2;
@@ -1124,8 +1113,8 @@
             // tbl63
             // 
             this.tbl63.ColumnCount = 2;
-            this.tbl63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.35294F));
+            this.tbl63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.64706F));
             this.tbl63.Location = new System.Drawing.Point(151, 198);
             this.tbl63.Name = "tbl63";
             this.tbl63.RowCount = 2;
@@ -1137,8 +1126,8 @@
             // tbl64
             // 
             this.tbl64.ColumnCount = 2;
-            this.tbl64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
+            this.tbl64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
             this.tbl64.Location = new System.Drawing.Point(225, 198);
             this.tbl64.Name = "tbl64";
             this.tbl64.RowCount = 2;
@@ -1150,8 +1139,8 @@
             // tbl65
             // 
             this.tbl65.ColumnCount = 2;
-            this.tbl65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.35294F));
+            this.tbl65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.64706F));
             this.tbl65.Location = new System.Drawing.Point(299, 198);
             this.tbl65.Name = "tbl65";
             this.tbl65.RowCount = 2;
@@ -1163,8 +1152,8 @@
             // tbl66
             // 
             this.tbl66.ColumnCount = 2;
-            this.tbl66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl66.Location = new System.Drawing.Point(373, 198);
             this.tbl66.Name = "tbl66";
             this.tbl66.RowCount = 2;
@@ -1176,8 +1165,8 @@
             // tbl67
             // 
             this.tbl67.ColumnCount = 2;
-            this.tbl67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl67.Location = new System.Drawing.Point(447, 198);
             this.tbl67.Name = "tbl67";
             this.tbl67.RowCount = 2;
@@ -1189,8 +1178,8 @@
             // tbl68
             // 
             this.tbl68.ColumnCount = 2;
-            this.tbl68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl68.Location = new System.Drawing.Point(521, 198);
             this.tbl68.Name = "tbl68";
             this.tbl68.RowCount = 2;
@@ -1202,8 +1191,8 @@
             // tbl69
             // 
             this.tbl69.ColumnCount = 2;
-            this.tbl69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl69.Location = new System.Drawing.Point(595, 198);
             this.tbl69.Name = "tbl69";
             this.tbl69.RowCount = 2;
@@ -1215,8 +1204,8 @@
             // tbl70
             // 
             this.tbl70.ColumnCount = 2;
-            this.tbl70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.13044F));
+            this.tbl70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.86956F));
             this.tbl70.Location = new System.Drawing.Point(669, 198);
             this.tbl70.Name = "tbl70";
             this.tbl70.RowCount = 2;
@@ -1228,8 +1217,8 @@
             // tbl71
             // 
             this.tbl71.ColumnCount = 2;
-            this.tbl71.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl71.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl71.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.68116F));
+            this.tbl71.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.31884F));
             this.tbl71.Location = new System.Drawing.Point(669, 133);
             this.tbl71.Name = "tbl71";
             this.tbl71.RowCount = 2;
@@ -1241,8 +1230,8 @@
             // tbl72
             // 
             this.tbl72.ColumnCount = 2;
-            this.tbl72.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl72.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl72.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl72.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl72.Location = new System.Drawing.Point(595, 133);
             this.tbl72.Name = "tbl72";
             this.tbl72.RowCount = 2;
@@ -1254,8 +1243,8 @@
             // tbl73
             // 
             this.tbl73.ColumnCount = 2;
-            this.tbl73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl73.Location = new System.Drawing.Point(521, 133);
             this.tbl73.Name = "tbl73";
             this.tbl73.RowCount = 2;
@@ -1267,8 +1256,8 @@
             // tbl74
             // 
             this.tbl74.ColumnCount = 2;
-            this.tbl74.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl74.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl74.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
+            this.tbl74.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
             this.tbl74.Location = new System.Drawing.Point(447, 133);
             this.tbl74.Name = "tbl74";
             this.tbl74.RowCount = 2;
@@ -1280,8 +1269,8 @@
             // tbl75
             // 
             this.tbl75.ColumnCount = 2;
-            this.tbl75.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl75.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl75.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl75.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl75.Location = new System.Drawing.Point(373, 133);
             this.tbl75.Name = "tbl75";
             this.tbl75.RowCount = 2;
@@ -1293,8 +1282,8 @@
             // tbl76
             // 
             this.tbl76.ColumnCount = 2;
-            this.tbl76.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl76.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl76.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl76.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl76.Location = new System.Drawing.Point(299, 133);
             this.tbl76.Name = "tbl76";
             this.tbl76.RowCount = 2;
@@ -1306,8 +1295,8 @@
             // tbl77
             // 
             this.tbl77.ColumnCount = 2;
-            this.tbl77.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl77.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl77.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.70588F));
+            this.tbl77.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.29412F));
             this.tbl77.Location = new System.Drawing.Point(225, 133);
             this.tbl77.Name = "tbl77";
             this.tbl77.RowCount = 2;
@@ -1319,8 +1308,8 @@
             // tbl78
             // 
             this.tbl78.ColumnCount = 2;
-            this.tbl78.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl78.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl78.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl78.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl78.Location = new System.Drawing.Point(151, 133);
             this.tbl78.Name = "tbl78";
             this.tbl78.RowCount = 2;
@@ -1332,8 +1321,8 @@
             // tbl79
             // 
             this.tbl79.ColumnCount = 2;
-            this.tbl79.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl79.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl79.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl79.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl79.Location = new System.Drawing.Point(77, 133);
             this.tbl79.Name = "tbl79";
             this.tbl79.RowCount = 2;
@@ -1345,8 +1334,8 @@
             // tbl80
             // 
             this.tbl80.ColumnCount = 2;
-            this.tbl80.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl80.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl80.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl80.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl80.Location = new System.Drawing.Point(3, 133);
             this.tbl80.Name = "tbl80";
             this.tbl80.RowCount = 2;
@@ -1358,8 +1347,8 @@
             // tbl81
             // 
             this.tbl81.ColumnCount = 2;
-            this.tbl81.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl81.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl81.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.30407F));
+            this.tbl81.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.69592F));
             this.tbl81.Location = new System.Drawing.Point(3, 68);
             this.tbl81.Name = "tbl81";
             this.tbl81.RowCount = 2;
@@ -1371,8 +1360,8 @@
             // tbl82
             // 
             this.tbl82.ColumnCount = 2;
-            this.tbl82.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl82.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl82.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl82.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl82.Location = new System.Drawing.Point(77, 68);
             this.tbl82.Name = "tbl82";
             this.tbl82.RowCount = 2;
@@ -1384,8 +1373,8 @@
             // tbl83
             // 
             this.tbl83.ColumnCount = 2;
-            this.tbl83.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl83.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl83.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.88235F));
+            this.tbl83.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.11765F));
             this.tbl83.Location = new System.Drawing.Point(151, 68);
             this.tbl83.Name = "tbl83";
             this.tbl83.RowCount = 2;
@@ -1397,8 +1386,8 @@
             // tbl84
             // 
             this.tbl84.ColumnCount = 2;
-            this.tbl84.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl84.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl84.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
+            this.tbl84.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
             this.tbl84.Location = new System.Drawing.Point(225, 68);
             this.tbl84.Name = "tbl84";
             this.tbl84.RowCount = 2;
@@ -1410,8 +1399,8 @@
             // tbl85
             // 
             this.tbl85.ColumnCount = 2;
-            this.tbl85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl85.Location = new System.Drawing.Point(299, 68);
             this.tbl85.Name = "tbl85";
             this.tbl85.RowCount = 2;
@@ -1423,8 +1412,8 @@
             // tbl86
             // 
             this.tbl86.ColumnCount = 2;
-            this.tbl86.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl86.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl86.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl86.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl86.Location = new System.Drawing.Point(373, 68);
             this.tbl86.Name = "tbl86";
             this.tbl86.RowCount = 2;
@@ -1436,8 +1425,8 @@
             // tbl87
             // 
             this.tbl87.ColumnCount = 2;
-            this.tbl87.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl87.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl87.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl87.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl87.Location = new System.Drawing.Point(447, 68);
             this.tbl87.Name = "tbl87";
             this.tbl87.RowCount = 2;
@@ -1449,8 +1438,8 @@
             // tbl88
             // 
             this.tbl88.ColumnCount = 2;
-            this.tbl88.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl88.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl88.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl88.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl88.Location = new System.Drawing.Point(521, 68);
             this.tbl88.Name = "tbl88";
             this.tbl88.RowCount = 2;
@@ -1462,8 +1451,8 @@
             // tbl89
             // 
             this.tbl89.ColumnCount = 2;
-            this.tbl89.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl89.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl89.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.35294F));
+            this.tbl89.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.64706F));
             this.tbl89.Location = new System.Drawing.Point(595, 68);
             this.tbl89.Name = "tbl89";
             this.tbl89.RowCount = 2;
@@ -1475,8 +1464,8 @@
             // tbl90
             // 
             this.tbl90.ColumnCount = 2;
-            this.tbl90.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl90.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl90.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.68116F));
+            this.tbl90.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.31884F));
             this.tbl90.Location = new System.Drawing.Point(669, 68);
             this.tbl90.Name = "tbl90";
             this.tbl90.RowCount = 2;
@@ -1488,8 +1477,8 @@
             // tbl91
             // 
             this.tbl91.ColumnCount = 2;
-            this.tbl91.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl91.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl91.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.78261F));
+            this.tbl91.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.21739F));
             this.tbl91.Location = new System.Drawing.Point(669, 3);
             this.tbl91.Name = "tbl91";
             this.tbl91.RowCount = 2;
@@ -1501,8 +1490,8 @@
             // tbl92
             // 
             this.tbl92.ColumnCount = 2;
-            this.tbl92.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl92.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl92.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl92.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl92.Location = new System.Drawing.Point(595, 3);
             this.tbl92.Name = "tbl92";
             this.tbl92.RowCount = 2;
@@ -1514,8 +1503,8 @@
             // tbl93
             // 
             this.tbl93.ColumnCount = 2;
-            this.tbl93.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl93.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl93.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl93.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl93.Location = new System.Drawing.Point(521, 3);
             this.tbl93.Name = "tbl93";
             this.tbl93.RowCount = 2;
@@ -1527,8 +1516,8 @@
             // tbl94
             // 
             this.tbl94.ColumnCount = 2;
-            this.tbl94.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl94.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl94.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl94.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl94.Location = new System.Drawing.Point(447, 3);
             this.tbl94.Name = "tbl94";
             this.tbl94.RowCount = 2;
@@ -1540,8 +1529,8 @@
             // tbl95
             // 
             this.tbl95.ColumnCount = 2;
-            this.tbl95.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl95.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl95.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl95.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
             this.tbl95.Location = new System.Drawing.Point(373, 3);
             this.tbl95.Name = "tbl95";
             this.tbl95.RowCount = 2;
@@ -1553,8 +1542,8 @@
             // tbl96
             // 
             this.tbl96.ColumnCount = 2;
-            this.tbl96.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl96.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl96.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tbl96.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tbl96.Location = new System.Drawing.Point(299, 3);
             this.tbl96.Name = "tbl96";
             this.tbl96.RowCount = 2;
@@ -1566,8 +1555,8 @@
             // tbl97
             // 
             this.tbl97.ColumnCount = 2;
-            this.tbl97.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl97.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl97.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl97.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl97.Location = new System.Drawing.Point(225, 3);
             this.tbl97.Name = "tbl97";
             this.tbl97.RowCount = 2;
@@ -1579,8 +1568,8 @@
             // tbl98
             // 
             this.tbl98.ColumnCount = 2;
-            this.tbl98.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl98.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl98.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.41176F));
+            this.tbl98.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.58823F));
             this.tbl98.Location = new System.Drawing.Point(151, 3);
             this.tbl98.Name = "tbl98";
             this.tbl98.RowCount = 2;
@@ -1592,8 +1581,8 @@
             // tbl99
             // 
             this.tbl99.ColumnCount = 2;
-            this.tbl99.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl99.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl99.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tbl99.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
             this.tbl99.Location = new System.Drawing.Point(77, 3);
             this.tbl99.Name = "tbl99";
             this.tbl99.RowCount = 2;
@@ -1605,8 +1594,8 @@
             // tbl100
             // 
             this.tbl100.ColumnCount = 2;
-            this.tbl100.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl100.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl100.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.23529F));
+            this.tbl100.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.76471F));
             this.tbl100.Location = new System.Drawing.Point(3, 3);
             this.tbl100.Name = "tbl100";
             this.tbl100.RowCount = 2;
@@ -1618,8 +1607,8 @@
             // tbl51
             // 
             this.tbl51.ColumnCount = 2;
-            this.tbl51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.88406F));
-            this.tbl51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.11594F));
+            this.tbl51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.68116F));
+            this.tbl51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.31884F));
             this.tbl51.Location = new System.Drawing.Point(669, 263);
             this.tbl51.Name = "tbl51";
             this.tbl51.RowCount = 2;
@@ -1627,6 +1616,19 @@
             this.tbl51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tbl51.Size = new System.Drawing.Size(69, 59);
             this.tbl51.TabIndex = 150;
+            // 
+            // tbl58
+            // 
+            this.tbl58.ColumnCount = 2;
+            this.tbl58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.82353F));
+            this.tbl58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.17647F));
+            this.tbl58.Location = new System.Drawing.Point(151, 263);
+            this.tbl58.Name = "tbl58";
+            this.tbl58.RowCount = 2;
+            this.tbl58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl58.Size = new System.Drawing.Size(68, 59);
+            this.tbl58.TabIndex = 157;
             // 
             // tblToolbar
             // 
@@ -1693,6 +1695,7 @@
             // btnStep
             // 
             this.btnStep.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btnStep.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnStep.Enabled = false;
             this.btnStep.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStep.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -1745,7 +1748,7 @@
             this.tblMain.ResumeLayout(false);
             this.pnlBoard.ResumeLayout(false);
             this.tblSquars.ResumeLayout(false);
-            this.tbl20.ResumeLayout(false);
+            this.tbl1.ResumeLayout(false);
             this.tblToolbar.ResumeLayout(false);
             this.tblToolbar.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
