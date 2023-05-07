@@ -16,5 +16,7 @@ the snake's tail is,
 and on the next turn continue from there.   
 The winner is the one who brings his pawn to the end point first! 
 
+**The full spec for the game is in the repo, check out the docs folder.**
+
 
 ![wireframe](https://user-images.githubusercontent.com/86372014/236340571-700eeee6-1fed-44a0-b050-b8a449f28281.PNG)
