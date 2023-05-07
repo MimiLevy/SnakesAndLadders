@@ -1,4 +1,6 @@
-﻿using System.Windows.Forms;
+﻿using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace SnakesAndLadders
 {
@@ -6,19 +8,20 @@ namespace SnakesAndLadders
     public partial class frmSnakesAndLadders : Form
     {
         int stepsforcurrentturn = 0;
-        int newindex = 0;
+        int targetindex = 0;
         enum TurnEnum { Red, Blue };
         TurnEnum currentturn = TurnEnum.Red;
 
         List<TableLayoutPanel> lstsquars;
-        List<List<TableLayoutPanel>> lstladdersspots;
-        List<List<TableLayoutPanel>> lstsnakesspots;
+        List<List<TableLayoutPanel>> lstladderspoints;
+        List<List<TableLayoutPanel>> lstsnakespoints;
         public frmSnakesAndLadders()
         {
             InitializeComponent();
             btnStart.Click += BtnStart_Click;
             btnThrowTheDice.Click += BtnThrowTheDice_Click;
             btnStep.Click += BtnStep_Click;
+                
 
             lstsquars = new()
             {
@@ -34,7 +37,7 @@ namespace SnakesAndLadders
                 tbl91, tbl92, tbl93,tbl94, tbl95, tbl96, tbl97, tbl98, tbl99, tbl100
             };
 
-            lstladdersspots = new()
+            lstladderspoints = new()
             {
                 new() {tbl3, tbl19},
                 new() {tbl8, tbl14},
@@ -42,19 +45,19 @@ namespace SnakesAndLadders
                 new() {tbl24, tbl36},
                 new() {tbl32, tbl50},
                 new() {tbl58, tbl64},
-                new() {tbl66, tbl74},
+                new() {tbl66, tbl75},
                 new() {tbl71, tbl89},
                 new() {tbl83, tbl99},
                 new() {tbl87, tbl94},
             };
 
-            lstsnakesspots = new()
+            lstsnakespoints = new()
             {
                 new() {tbl17, tbl6},
                 new() {tbl41, tbl22},
-                new() {tbl48, tbl14},
+                new() {tbl48, tbl15},
                 new() {tbl79, tbl60},
-                new() {tbl86, tbl78},
+                new() {tbl95, tbl78},
                 new() {tbl93, tbl68},
             };
         }
@@ -66,51 +69,117 @@ namespace SnakesAndLadders
             return n;
         }
 
+        private void EnableDisableControls()
+        {
+            btnStep.Enabled = btnStep.Enabled == true ? false : true;
+            btnThrowTheDice.Enabled = btnThrowTheDice.Enabled == true ? false : true;
+        }
+
         private TableLayoutPanel GetCurrentTbl()
         {
-            var currenttbl = (TableLayoutPanel)GetCurrentPawn().Parent;
-            return currenttbl;
+            var tbl = (TableLayoutPanel)GetCurrentPawn().Parent;
+            return tbl;
         }
 
         private Panel GetCurrentPawn()
         {
-            Panel currentpawn = currentturn == TurnEnum.Red ? pnlRedPawn : pnlBluePawn;
-            return currentpawn;
+            var pnl = currentturn == TurnEnum.Red ? pnlRedPawn : pnlBluePawn;
+            return pnl;
         }
+
+        private void RemovePawn(TableLayoutPanel tbl, Panel pawn)
+        {
+            tbl.Controls.Remove(pawn);
+        }
+
+        private void AddPawn(TableLayoutPanel tbl, Panel pawn)
+        {
+            tbl.Controls.Add(pawn);
+        }
+
+        private void DoIt(List<List<TableLayoutPanel>> lst, string message)
+        {
+            var targettbl = lstsquars[targetindex];
+            foreach (var l in lst)
+            {
+                if (l[0] == targettbl)
+                {
+                    MessageBox.Show(message);
+                    RemovePawn(targettbl, GetCurrentPawn());
+                    AddPawn(l[1], GetCurrentPawn());
+                }
+            }
+        }
+
+        private void CheckSnakes()
+        {
+            DoIt(lstsnakespoints, "OUCH!!! A Snake!!!" + Environment.NewLine + "Click OK to slide down!");
+        }
+
+        private void CheckLadders()
+        {
+            DoIt(lstladderspoints, "HOORAY!!! A Ladder!!!" + Environment.NewLine + "Click OK to climb up!");
+        }
+
+        private void CheckWinner(TableLayoutPanel nexttbl)
+        {
+            if (nexttbl == tbl100)
+            {
+                btnStep.Enabled = false;
+                btnThrowTheDice.Enabled = false;
+                lblMessage.Text = "WOW! " + currentturn.ToString() + " is the winner!!!";
+                lblMessage.BackColor = currentturn == TurnEnum.Red ? Color.Red : Color.Blue;
+            }
+        }
+
         private void TakeSteps()
         {
             var currentindex = lstsquars.IndexOf(GetCurrentTbl());
-            var nexttbl = lstsquars[currentindex + 1];
+            var nextindex = currentindex + 1;
+            var nexttbl = lstsquars[nextindex];
 
-            GetCurrentTbl().Controls.Remove(GetCurrentPawn());
-            nexttbl.Controls.Add(GetCurrentPawn());
-            
-            if(newindex == currentindex + 1)
+            CheckWinner(nexttbl);
+
+            RemovePawn(GetCurrentTbl(), GetCurrentPawn());
+            AddPawn(nexttbl, GetCurrentPawn());
+
+            if (targetindex == nextindex)
             {
-                btnStep.Enabled = false;
-                btnThrowTheDice.Enabled = true;
+                CheckLadders();
+                CheckSnakes();
+                EnableDisableControls();
                 currentturn = currentturn == TurnEnum.Red ? TurnEnum.Blue : TurnEnum.Red;
                 lblMessage.Text = "Current Turn: " + currentturn.ToString() + " – Throw the dice!";
             }
         }
+
         private void DoTurn()
         {
             stepsforcurrentturn = PickRandomNumber();
-            newindex = lstsquars.IndexOf(GetCurrentTbl()) + stepsforcurrentturn;
+            targetindex = lstsquars.IndexOf(GetCurrentTbl()) + stepsforcurrentturn;
             lblMessage.Text = "Take " + stepsforcurrentturn.ToString() + " steps!";
-            btnStep.Enabled = true;
-            btnThrowTheDice.Enabled = false;
+            EnableDisableControls();
         }
+
         private void StartGame()
         {
+
+            lstsquars.ForEach(tbl => tbl.Controls.Remove(pnlRedPawn));
+            lstsquars.ForEach(tbl => tbl.Controls.Remove(pnlBluePawn));
+            AddPawn(tbl1, pnlRedPawn);
+            AddPawn(tbl1, pnlBluePawn);
+            lblMessage.BackColor = SystemColors.AppWorkspace;
             lblMessage.Text = "Current Turn: Red – Throw the dice!";
+            currentturn = TurnEnum.Red;
+            EnableDisableControls();
             btnStep.Enabled = false;
-            btnThrowTheDice.Enabled = true;
         }
+
         private void BtnStep_Click(object? sender, EventArgs e)
         {
             TakeSteps();
         }
+
         private void BtnThrowTheDice_Click(object? sender, EventArgs e)
         {
             DoTurn();
@@ -120,7 +189,6 @@ namespace SnakesAndLadders
         {
             StartGame();
         }
-
     }
 }
 

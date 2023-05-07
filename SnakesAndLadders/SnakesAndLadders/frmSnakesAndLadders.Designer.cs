@@ -32,9 +32,6 @@
             this.tblMain = new System.Windows.Forms.TableLayoutPanel();
             this.pnlBoard = new System.Windows.Forms.Panel();
             this.tblSquars = new System.Windows.Forms.TableLayoutPanel();
-            this.tbl1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlRedPawn = new System.Windows.Forms.Panel();
-            this.pnlBluePawn = new System.Windows.Forms.Panel();
             this.tbl2 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl3 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl4 = new System.Windows.Forms.TableLayoutPanel();
@@ -134,6 +131,9 @@
             this.tbl100 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl51 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl58 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pnlRedPawn = new System.Windows.Forms.Panel();
+            this.pnlBluePawn = new System.Windows.Forms.Panel();
             this.tblToolbar = new System.Windows.Forms.TableLayoutPanel();
             this.lblMessage = new System.Windows.Forms.Label();
             this.btnThrowTheDice = new System.Windows.Forms.Button();
@@ -308,39 +308,6 @@
             this.tblSquars.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblSquars.Size = new System.Drawing.Size(741, 651);
             this.tblSquars.TabIndex = 0;
-            // 
-            // tbl1
-            // 
-            this.tbl1.ColumnCount = 2;
-            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.15346F));
-            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.84654F));
-            this.tbl1.Controls.Add(this.pnlRedPawn, 0, 0);
-            this.tbl1.Controls.Add(this.pnlBluePawn, 0, 1);
-            this.tbl1.Location = new System.Drawing.Point(3, 588);
-            this.tbl1.Name = "tbl1";
-            this.tbl1.RowCount = 2;
-            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbl1.Size = new System.Drawing.Size(68, 60);
-            this.tbl1.TabIndex = 100;
-            // 
-            // pnlRedPawn
-            // 
-            this.pnlRedPawn.BackColor = System.Drawing.Color.Red;
-            this.pnlRedPawn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlRedPawn.Location = new System.Drawing.Point(3, 3);
-            this.pnlRedPawn.Name = "pnlRedPawn";
-            this.pnlRedPawn.Size = new System.Drawing.Size(17, 24);
-            this.pnlRedPawn.TabIndex = 2;
-            // 
-            // pnlBluePawn
-            // 
-            this.pnlBluePawn.BackColor = System.Drawing.Color.MediumBlue;
-            this.pnlBluePawn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBluePawn.Location = new System.Drawing.Point(3, 33);
-            this.pnlBluePawn.Name = "pnlBluePawn";
-            this.pnlBluePawn.Size = new System.Drawing.Size(17, 24);
-            this.pnlBluePawn.TabIndex = 0;
             // 
             // tbl2
             // 
@@ -1630,6 +1597,39 @@
             this.tbl58.Size = new System.Drawing.Size(68, 59);
             this.tbl58.TabIndex = 157;
             // 
+            // tbl1
+            // 
+            this.tbl1.ColumnCount = 2;
+            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.15346F));
+            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.84654F));
+            this.tbl1.Controls.Add(this.pnlRedPawn, 0, 0);
+            this.tbl1.Controls.Add(this.pnlBluePawn, 0, 1);
+            this.tbl1.Location = new System.Drawing.Point(3, 588);
+            this.tbl1.Name = "tbl1";
+            this.tbl1.RowCount = 2;
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tbl1.Size = new System.Drawing.Size(68, 60);
+            this.tbl1.TabIndex = 100;
+            // 
+            // pnlRedPawn
+            // 
+            this.pnlRedPawn.BackColor = System.Drawing.Color.Red;
+            this.pnlRedPawn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlRedPawn.Location = new System.Drawing.Point(3, 3);
+            this.pnlRedPawn.Name = "pnlRedPawn";
+            this.pnlRedPawn.Size = new System.Drawing.Size(17, 24);
+            this.pnlRedPawn.TabIndex = 2;
+            // 
+            // pnlBluePawn
+            // 
+            this.pnlBluePawn.BackColor = System.Drawing.Color.MediumBlue;
+            this.pnlBluePawn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBluePawn.Location = new System.Drawing.Point(3, 33);
+            this.pnlBluePawn.Name = "pnlBluePawn";
+            this.pnlBluePawn.Size = new System.Drawing.Size(17, 24);
+            this.pnlBluePawn.TabIndex = 0;
+            // 
             // tblToolbar
             // 
             this.tblToolbar.ColumnCount = 4;
@@ -1743,6 +1743,7 @@
             this.ClientSize = new System.Drawing.Size(747, 743);
             this.Controls.Add(this.tblMain);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSnakesAndLadders";
             this.Text = "Snakes & Ladders";
             this.tblMain.ResumeLayout(false);

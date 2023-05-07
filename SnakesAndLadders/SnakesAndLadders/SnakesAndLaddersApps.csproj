@@ -6,7 +6,12 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>22285snake_98774.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="22285snake_98774.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\CPUFramework\CPUFramework.csproj" />
