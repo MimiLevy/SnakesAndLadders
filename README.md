@@ -1,7 +1,7 @@
 # Snakes & Ladders
 
 ## Overview
-This repo is the implementation of the known classic game of Snakes & Ladders,  
+This repo is for the software implementation of the well-known classic game of Snakes & Ladders,  
 This game will allow two players to play against each other in a fun computer game.
 
 ## The Game
