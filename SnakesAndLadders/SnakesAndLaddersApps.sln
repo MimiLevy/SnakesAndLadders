@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnakesAndLaddersApps", "SnakesAndLadders\SnakesAndLaddersApps.csproj", "{48763BF9-CAA1-44CF-9D85-21922DF6D9F5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUISnakesAndLadders", "MAUISnakesAndLadders\MAUISnakesAndLadders.csproj", "{50335539-EDA5-45E3-BA3C-4584AD0BDB5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JS-SnakesAndLadders", "JS-SnakesAndLadders\JS-SnakesAndLadders.csproj", "{20C67C26-F5BE-4F4C-B2B1-CBD370FEBD2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{48763BF9-CAA1-44CF-9D85-21922DF6D9F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48763BF9-CAA1-44CF-9D85-21922DF6D9F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48763BF9-CAA1-44CF-9D85-21922DF6D9F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50335539-EDA5-45E3-BA3C-4584AD0BDB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50335539-EDA5-45E3-BA3C-4584AD0BDB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50335539-EDA5-45E3-BA3C-4584AD0BDB5B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{50335539-EDA5-45E3-BA3C-4584AD0BDB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50335539-EDA5-45E3-BA3C-4584AD0BDB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50335539-EDA5-45E3-BA3C-4584AD0BDB5B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{20C67C26-F5BE-4F4C-B2B1-CBD370FEBD2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C67C26-F5BE-4F4C-B2B1-CBD370FEBD2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C67C26-F5BE-4F4C-B2B1-CBD370FEBD2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C67C26-F5BE-4F4C-B2B1-CBD370FEBD2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

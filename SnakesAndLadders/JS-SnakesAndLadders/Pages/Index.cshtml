@@ -1,0 +1,74 @@
+﻿@page
+@model JS_SnakesAndLadders.Pages.Index1Model
+@{
+    ViewData["Title"] = "Home";
+}
+<div class="bg-primary bg-opacity-75 rounded-5 mt-4 border border-light shadow-lg bg-gradient">
+    <div class="row justify-content-center fs-3 p-2 text-dark fw-bold">
+        The Snakes & Ladders Game. &nbsp Let's have Fun!!
+    </div>
+    <div class="row justify-content-center fs-5 text-center p-1 text-dark fw-bolder">
+        Quality time with your child? &nbsp The kids are bored and looking for something to do?
+        <br />
+        The right and ideal place for a successful experience for anyone who wants to have lots of fun.
+    </div>
+</div>
+<hr />
+<div class="row">
+
+    <div class="col-lg-8">
+        <div class="row justify-content-center fs-4 fw-bold">Game Description</div>
+        <div class="row justify-content-center  p-4 fs-5">
+            <span class="text-decoration-underline fw-bold">The Game:</span>
+            2 players play on a board with 100 squares numbered from 1 to 100.
+            <br />
+            Each player in turn throws the dice and marches his pawn a number of steps according to the
+            number he received.
+            <br />
+            If the last step encounters the bottom of a ladder, the player will take his pawn and
+            go up to the top of the ladder and the next turn will continue from there.
+            If the last move encounters a snake's head, the player will slide the pawn to where
+            the snake's tail is, and on the next turn continue from there.
+            The winner is the one who brings his pawn to the end point first!
+        </div>
+        <div class="row justify-content-center  p-4 fs-5">
+            <span class="text-decoration-underline fw-bold">Game Process and Rules:</span>
+            <ul>
+                <li>
+                    The game starts when the player clicks Start. Until then the pawns on the are
+                    ignored and can't be moved, and the game status message is “Click Start to
+                    begin Game.”
+                </li>
+                <li>
+                    After Start is clicked: The message “Current Turn: Red pawn – Throw the
+                    dice!” is displayed. The 1st player takes their turn by clicking on the throw the
+                    dice button, the game status message should display the number he got
+                    between 1 and 6. The player forwards the red pawn a number of steps
+                    according to the number he received, If the last step encounters the bottom of
+                    a ladder or the head of a snake the computer will automatically move he's
+                    pawn according to the rules.
+                </li>
+                <li>
+                    After the red soldier reaches the intended slot, the message “Current Turn:
+                    Blue pawn – Throw the dice!” is displayed, and so the game will continue until
+                    there is a winner.
+                </li>
+                <li>
+                    The blue soldier will be disabled with no possibility to move it during the red
+                    soldier's turn and vice versa.
+                </li>
+                <li>
+                    The winner is the first to reach the final point, even if he has not yet finished
+                    walking all the steps he received.
+                </li>
+            </ul>
+          </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="row justify-content-center fs-4 mb-4 fw-bold">Wireframe</div>
+        <img src="/images/wireframe.png" class="img-fluid" alt="" style="max-height: 500px" />
+        <div class="row mt-3">
+            <a class="fs-4" href="/spec">See full spec</a>
+        </div>
+    </div>
+</div>

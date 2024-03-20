@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUISnakesAndLadders.SnakesAndLadders"
+             Title="Snakes And Ladders">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Border">
+                <Setter Property="Stroke" Value="black"/>
+                <Setter Property="StrokeThickness" Value="1"/>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="MinimumHeightRequest" Value="50"/>
+                <Setter Property="MinimumWidthRequest" Value="50"/>
+                <Setter Property="Opacity" Value="0.8"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Coral"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="CornerRadius" Value="12"/>
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid ColumnDefinitions="*" RowDefinitions="100,*">
+        <Grid Grid.Column="0" Grid.Row="0"  BackgroundColor="DarkGray" ColumnDefinitions="Auto,Auto,*" RowDefinitions="*">
+            <Button Grid.Column="0" Grid.Row="0" Text="START" TextColor="Black" FontSize="Medium"/>
+            <Button  Grid.Column="1" Grid.Row="0" Text="THROW THE DICE"  TextColor="Black" FontSize="Small"/>
+            <Frame BackgroundColor="LightGray" Grid.Column="2" Grid.Row="0" Margin="8">
+                <Label BackgroundColor="LightBlue" Text="Click Start to begin the game" TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"/>
+            </Frame>
+        </Grid>
+        <Grid BackgroundColor="Black" Grid.Row="1" ColumnDefinitions="*,*,*,*,*,*,*,*,*,*" RowDefinitions="*,*,*,*,*,*,*,*,*,*">
+            <Border Grid.Column="0" Grid.Row="0">
+                <Label BackgroundColor="Red" Text="1" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="25"/>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="1">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="2">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="3">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="4">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="5">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border  Grid.Column="0" Grid.Row="6">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="7">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="8">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="9">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+
+            <Border Grid.Column="1" Grid.Row="0">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="1">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="2">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="3">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="4">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="5">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="6">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="7">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="8">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="9">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+
+            <Border Grid.Column="2" Grid.Row="0">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="1">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="2">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="3">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="4">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="5">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="6">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="7">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="8">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="9">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+
+            <Border Grid.Column="3" Grid.Row="0">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="1">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="2">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="3">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="4">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="5">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="6">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="7">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="8">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="9">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+
+            <Border Grid.Column="4" Grid.Row="0">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="1">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="2">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="3">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="4">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="5">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="6">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="7">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="8">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="9">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+
+            <Border Grid.Column="5" Grid.Row="0">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="1">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="2">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="3">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="4">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="5">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="6">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="7">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="8">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="9">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+
+            <Border Grid.Column="6" Grid.Row="0">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="1">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="2">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="3">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="4">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="5">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="6">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="7">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="8">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="9">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+
+
+            <Border Grid.Column="7" Grid.Row="0">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="1">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="2">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="3">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="4">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="5">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="6">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="7">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="8">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="9">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+
+            <Border Grid.Column="8" Grid.Row="0">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="8" Grid.Row="1">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="8" Grid.Row="2">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="8" Grid.Row="3">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="8" Grid.Row="4">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="8" Grid.Row="5">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="8" Grid.Row="6">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="8" Grid.Row="7">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+            <Border Grid.Column="8" Grid.Row="8">
+                <Label BackgroundColor="Red"/>
+            </Border>
+            <Border Grid.Column="8" Grid.Row="9">
+                <Label BackgroundColor="Blue"/>
+            </Border>
+
+            <Border Grid.Column="9" Grid.Row="0">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="9" Grid.Row="1">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="9" Grid.Row="2">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="9" Grid.Row="3">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="9" Grid.Row="4">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="9" Grid.Row="5">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="9" Grid.Row="6">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="9" Grid.Row="7">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+            <Border Grid.Column="9" Grid.Row="8">
+                <Label BackgroundColor="Green"/>
+            </Border>
+            <Border Grid.Column="9" Grid.Row="9">
+                <Label BackgroundColor="Yellow"/>
+            </Border>
+
+        </Grid>
+    </Grid>
+</ContentPage>
