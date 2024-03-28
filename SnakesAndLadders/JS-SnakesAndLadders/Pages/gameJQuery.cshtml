@@ -1,0 +1,295 @@
+﻿@page
+@model JS_SnakesAndLadders.Pages.gameJQueryModel
+@{
+}
+<div class="row justify-content-center">
+    <button class="col-2 btn btn-outline-info rounded-4 fs-5 m-1" id="btnStart">Start</button>
+    <button class="col-2 btn btn-outline-success rounded-4 fs-5 m-1" id="btnDice" disabled>Throw the Dice</button>
+    <button class="col-2 btn btn-primary rounded-4 fs-5 m-1" id="btnStep" disabled>Step</button>
+</div>
+
+<div class="row justify-content-center">
+    <label class="col-lg-6 bg-info-subtle fs-5 p-2 mt-1 text-dark border border-2" id="msg">Click Start to begin the game</label>
+</div>
+
+<hr class="d-lg-inline" />
+
+<div class="row justify-content-center">
+    <table class="justify-content-center flex-column d-grid mt-3 opaticy-100">
+        <tr>
+            <td class="squres" id="100"></td>
+            <td class="squres la9" id="99"></td>
+            <td class="squres" id="98"></td>
+            <td class="squres" id="97"></td>
+            <td class="squres" id="96"></td>
+            <td class="squres sn sn6" id="95"></td>
+            <td class="squres la10" id="94"></td>
+            <td class="squres sn sn5" id="93"></td>
+            <td class="squres" id="92"></td>
+            <td class="squres" id="91"></td>
+        </tr>
+        <tr>
+            <td class="squres" id="81"></td>
+            <td class="squres" id="82"></td>
+            <td class="squres la la9" id="83"></td>
+            <td class="squres" id="84"></td>
+            <td class="squres" id="85"></td>
+            <td class="squres" id="86"></td>
+            <td class="squres la la10" id="87"></td>
+            <td class="squres" id="88"></td>
+            <td class="squres la8" id="89"></td>
+            <td class="squres" id="90"></td>
+        </tr>
+        <tr>
+            <td class="squres" id="80"></td>
+            <td class="squres sn sn4" id="79"></td>
+            <td class="squres" id="78"></td>
+            <td class="squres sn6" id="77"></td>
+            <td class="squres" id="76"></td>
+            <td class="squres la7" id="75"></td>
+            <td class="squres" id="74"></td>
+            <td class="squres" id="73"></td>
+            <td class="squres" id="72"></td>
+            <td class="squres la la8" id="71"></td>
+        </tr>
+        <tr>
+            <td class="squres" id="61"></td>
+            <td class="squres" id="62"></td>
+            <td class="squres" id="63"></td>
+            <td class="squres la6" id="64"></td>
+            <td class="squres" id="65"></td>
+            <td class="squres la la7" id="66"></td>
+            <td class="squres" id="67"></td>
+            <td class="squres sn5" id="68"></td>
+            <td class="squres" id="69"></td>
+            <td class="squres" id="70"></td>
+        </tr>
+        <tr>
+            <td class="squres sn4" id="60"></td>
+            <td class="squres" id="59"></td>
+            <td class="squres la la6" id="58"></td>
+            <td class="squres" id="57"></td>
+            <td class="squres" id="56"></td>
+            <td class="squres" id="55"></td>
+            <td class="squres" id="54"></td>
+            <td class="squres" id="53"></td>
+            <td class="squres" id="52"></td>
+            <td class="squres" id="51"></td>
+        </tr>
+        <tr>
+            <td class="squres sn sn3" id="41"></td>
+            <td class="squres" id="42"></td>
+            <td class="squres" id="43"></td>
+            <td class="squres" id="44"></td>
+            <td class="squres" id="45"></td>
+            <td class="squres" id="46"></td>
+            <td class="squres" id="47"></td>
+            <td class="squres sn sn2" id="48"></td>
+            <td class="squres" id="49"></td>
+            <td class="squres la5" id="50"></td>
+        </tr>
+        <tr>
+            <td class="squres la3" id="40"></td>
+            <td class="squres" id="39"></td>
+            <td class="squres" id="38"></td>
+            <td class="squres" id="37"></td>
+            <td class="squres la4" id="36"></td>
+            <td class="squres" id="35"></td>
+            <td class="squres" id="34"></td>
+            <td class="squres" id="33"></td>
+            <td class="squres la la5" id="32"></td>
+            <td class="squres" id="31"></td>
+        </tr>
+        <tr>
+            <td class="squres la la3" id="21"></td>
+            <td class="squres sn3" id="22"></td>
+            <td class="squres" id="23"></td>
+            <td class="squres la la4" id="24"></td>
+            <td class="squres" id="25"></td>
+            <td class="squres" id="26"></td>
+            <td class="squres" id="27"></td>
+            <td class="squres" id="28"></td>
+            <td class="squres" id="29"></td>
+            <td class="squres" id="30"></td>
+        </tr>
+        <tr>
+            <td class="squres" id="20"></td>
+            <td class="squres la1" id="19"></td>
+            <td class="squres" id="18"></td>
+            <td class="squres sn sn1" id="17"></td>
+            <td class="squres" id="16"></td>
+            <td class="squres sn2" id="15"></td>
+            <td class="squres la2" id="14"></td>
+            <td class="squres" id="13"></td>
+            <td class="squres" id="12"></td>
+            <td class="squres" id="11"></td>
+        </tr>
+        <tr>
+            <td class="squres" id="1">
+                <label id="p1" class="bg-danger p-2 rounded-4 border border-4 p"></label>
+                <label id="p2" class="bg-secondary p-2 rounded-5 border border-4 p"></label>
+            </td>
+            <td class="squres" id="2"></td>
+            <td class="squres la la1" id="3"></td>
+            <td class="squres" id="4"></td>
+            <td class="squres" id="5"></td>
+            <td class="squres sn1" id="6"></td>
+            <td class="squres" id="7"></td>
+            <td class="squres la la2" id="8"></td>
+            <td class="squres" id="9"></td>
+            <td class="squres" id="10"></td>
+        </tr>
+    </table>
+    <img class="w-auto h-auto" src="/images/b1b.png" alt="" id="img" />
+</div>
+
+@section Scripts{
+    <script>
+        let msg;
+        let redPawn;
+        let bluePawn;
+        let btnStart;
+        let btnDice;
+        let btnStep;
+        let currentPawn;
+        const allSqures = [];
+        const snakeSpots = [];
+        const ladderSpots = [];
+        
+        let stepsForCurrentTurn = 0;
+        let targetIndex = 0;
+        let diceSound = new Audio("/audio/dice.mp3");
+        let snakeSound = new Audio("/audio/snake.mp3");
+        let ladderSound = new Audio("/audio/ladder.mp3");
+        let winnerSound = new Audio("/audio/winner.mp3");
+        let startSound = new Audio("/audio/start.mp3");
+
+        
+
+        $(document).ready(function () {
+            msg = $("#msg");
+            btnStart = $("#btnStart");
+            btnDice = $("#btnDice");
+            btnStep = $("#btnStep");
+            redPawn = document.querySelector("#p1");
+            bluePawn = document.querySelector("#p2");
+            currentPawn = redPawn;
+            allSqures.push(...$(".squres"));
+            allSqures.sort((a, b) => a.id - b.id);
+            snakeSpots.push(...$(".sn"));
+            ladderSpots.push(...$(".la"));
+
+            $(btnStart).click(startGame);
+            $(btnDice).click(throwTheDice);
+            $(btnStep).click(takeSteps);
+        });
+
+        function takeSteps() {
+            let e = currentPawn.parentElement;
+
+            let nextIndex = getCurrentIndex() + 1;
+            let nextSqure = allSqures[nextIndex];
+
+            checkWinner(nextIndex);
+
+            e.removeChild(currentPawn);
+            nextSqure.appendChild(currentPawn);
+
+            if (nextIndex === targetIndex) {
+                checkSnakes();
+                checkLadders();
+                changeButtonsState();
+                currentPawn = currentPawn == redPawn ? bluePawn : redPawn;
+                showMessage();
+            }
+        }
+
+
+        function throwTheDice() {
+            stepsForCurrentTurn = getRandomInt(1, 7);
+            targetIndex = getCurrentIndex() + stepsForCurrentTurn;
+            diceSound.play();
+            msg.text(`Take ${stepsForCurrentTurn} steps!`);
+            changeButtonsState();
+        }
+
+        function startGame() {
+            startSound.play();
+            if (getCurrentIndex() != 0) {
+                location.reload();
+            }
+            currentPawn = redPawn;
+            showMessage();
+            btnDice.prop("disabled" ,false);
+            btnStep.prop("disabled",  true);
+        }
+
+        function checkWinner(nextIndex) {
+            if (nextIndex === 99) {
+                winnerSound.play();
+                let winner = true;
+                showMessage(winner);
+                let c = currentPawn == redPawn ? "bg-danger" : "bg-secondary";
+                $(msg).removeClass("bg-info-subtle").addClass(c);
+                btnDice.prop("disabled", true);
+                btnStep.prop("disabled", true);
+            }
+        }
+
+        function checkIt(snakeOrLadder, alertContent) {
+            let targetSqure = allSqures[targetIndex];
+            let list = snakeOrLadder == "snake" ? snakeSpots : ladderSpots;
+            let spot = list.find(element => element.id === targetSqure.id)
+            if (spot) {
+                alert(alertContent);
+                let n;
+                let prefix = snakeOrLadder == "snake" ? "sn" : "la";
+                for (i = 1; i <= 10; i++) {
+                    let isTrue = spot.classList.contains(`${prefix}${i}`);
+                    if (isTrue) { n = i };
+                }
+                let newIndex;
+                if (snakeOrLadder == "snake") {
+                    newIndex = allSqures.findIndex((element) => element.classList.contains(`sn${n}`)); snakeSound.play();
+                }
+                else {
+                    newIndex = allSqures.findLastIndex((element) => element.classList.contains(`la${n}`)); ladderSound.play();
+                }
+
+                currentPawn.parentElement.removeChild(currentPawn);
+                allSqures[newIndex].appendChild(currentPawn);
+            }
+        }
+
+        function checkSnakes() {
+            checkIt("snake", "OUCH!!! A Snake!!!\nClick OK to slide down!");
+        }
+
+        function checkLadders() {
+            checkIt("ladder", "HOORAY!!! A Ladder!!!\nClick OK to climb up!");
+        }
+
+        function getCurrentIndex() {
+            let e = currentPawn.parentElement;
+            return allSqures.findIndex((element) => element.id === e.id);
+        }
+
+        function changeButtonsState() {
+            btnStep.prop("disabled", btnStep.prop("disabled") == true ? false : true);
+            btnDice.prop("disabled", btnDice.prop("disabled") == true ? false : true);
+        }
+
+        function showMessage(winner) {
+            let c = currentPawn == redPawn ? "Red" : "Blue";
+            let content = winner ? `WOW! ${c} is the Winner` : `Current Turn: ${c} – Throw the dice!`;
+            msg.text(content);
+        }
+
+        function getRandomInt(min, max) {
+            const minCeiled = Math.ceil(min);
+            const maxFloored = Math.floor(max);
+            return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
+        }
+    </script>
+
+}
