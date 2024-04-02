@@ -7,4 +7,12 @@
     <RootNamespace>JS_SnakesAndLadders</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="ts\gameTypeScript.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ts\gameTypeScript.ts" />
+  </ItemGroup>
+
 </Project>
